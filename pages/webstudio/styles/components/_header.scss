@@ -4,6 +4,7 @@
 	top: 0;
 	left: 0;
 	background-color: #ffffff;
+	z-index: 1488;
 	> .wrapper {
 		padding: 25px 0;
 		display: flex;
@@ -30,8 +31,22 @@
 				font-size: 14px;
 				font-weight: 500;
 				transition: 0.4s ease-in-out;
+				position: relative;
 				&:hover {
 					color: var(--color-primery-hover);
+				}
+			}
+			> a.active {
+				color: var(--color-primery);
+				&::after {
+					content: "";
+					position: absolute;
+					bottom: -31px;
+					left: -2px;
+					border: 1px solid var(--color-primery);
+					width: 48px;
+					background-color: var(--color-primery);
+					border-radius: 2px;
 				}
 			}
 		}
@@ -40,10 +55,16 @@
 		display: flex;
 		gap: 30px;
 		&__link {
-			color: #000000;
+			color: #757575;
 			transition: ease-in-out 0.4s;
+			> svg path {
+				transition: 0.4s;
+			}
 			&:hover {
 				color: var(--color-primery-hover);
+				> svg path {
+					fill: var(--color-primery);
+				}
 			}
 		}
 	}

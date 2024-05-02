@@ -1,0 +1,21 @@
+.info {
+	margin: 95px 0;
+	&__menu {
+		display: flex;
+		gap: 30px;
+		&__item {
+			max-width: 270px;
+			&__title {
+				font-size: 14px;
+				font-weight: 700;
+				padding: 30px 0 10px 0;
+			}
+			&__text {
+				color: #757575;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 24px;
+			}
+		}
+	}
+}

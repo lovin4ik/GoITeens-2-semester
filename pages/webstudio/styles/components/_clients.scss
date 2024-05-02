@@ -1,0 +1,38 @@
+.clients {
+	margin-bottom: 95px;
+	> .wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	&__title {
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 42.19px;
+		margin-bottom: 50px;
+		color: #212121;
+	}
+	&__menu {
+		display: flex;
+		gap: 30px;
+		> li {
+			border: 1px solid #afb1b8;
+			border-radius: 4px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 170px;
+			height: 92px;
+			> svg path {
+				transition: 0.3s ease-in-out;
+			}
+			&:hover {
+				border: 1px solid var(--color-primery);
+				> svg path {
+					fill: #2196f3;
+				}
+			}
+		}
+	}
+}
