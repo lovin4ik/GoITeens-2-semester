@@ -1,0 +1,29 @@
+.swiper {
+	width: calc(50% + 32px);
+	height: 500px;
+	transform: scale(1.1);
+	border-radius: 20px;
+	&-slide {
+		border-radius: 20px;
+		background-color: #262931;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+.swiper-button-prev,
+.swiper-button-next {
+	transform: scale(1);
+	padding: 20px;
+	border-radius: 15px;
+	transition: 0.4s ease-in-out;
+	z-index: 100;
+	&:hover {
+		background-color: #00458f;
+	}
+}
+.swiper-button-disabled {
+	transform: scale(0);
+	transition: 0.4s;
+}
