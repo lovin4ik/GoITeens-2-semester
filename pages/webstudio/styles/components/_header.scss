@@ -1,0 +1,50 @@
+.header {
+	width: 100%;
+	position: sticky;
+	top: 0;
+	left: 0;
+	background-color: #ffffff;
+	> .wrapper {
+		padding: 25px 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__menu {
+		display: flex;
+		align-items: center;
+		gap: 50px;
+		&__item {
+			> .logo {
+				margin-right: 93px;
+				color: #000000;
+				font-size: 26px;
+				font-weight: 700;
+				> span {
+					font-family: "Raleway", sans-serif;
+					color: var(--color-primery);
+				}
+			}
+			> a {
+				color: #000000;
+				font-size: 14px;
+				font-weight: 500;
+				transition: 0.4s ease-in-out;
+				&:hover {
+					color: var(--color-primery-hover);
+				}
+			}
+		}
+	}
+	&__address {
+		display: flex;
+		gap: 30px;
+		&__link {
+			color: #000000;
+			transition: ease-in-out 0.4s;
+			&:hover {
+				color: var(--color-primery-hover);
+			}
+		}
+	}
+}

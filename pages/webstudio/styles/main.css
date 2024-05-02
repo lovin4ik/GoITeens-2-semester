@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primery: #2196f3;
+  --color-primery-hover: #4fb0ff;
+  --color-dark: #212121;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+.header > .wrapper {
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header__menu__item > .logo {
+  margin-right: 93px;
+  color: #000000;
+  font-size: 26px;
+  font-weight: 700;
+}
+.header__menu__item > .logo > span {
+  font-family: "Raleway", sans-serif;
+  color: var(--color-primery);
+}
+.header__menu__item > a {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.4s ease-in-out;
+}
+.header__menu__item > a:hover {
+  color: var(--color-primery-hover);
+}
+.header__address {
+  display: flex;
+  gap: 30px;
+}
+.header__address__link {
+  color: #000000;
+  transition: ease-in-out 0.4s;
+}
+.header__address__link:hover {
+  color: var(--color-primery-hover);
+}
+
+.hero {
+  background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 10%, rgba(47, 48, 58, 0.4) 100%), url(../images/hero-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1600px;
+}
+.hero > .wrapper {
+  padding: 200px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero__title {
+  max-width: 695px;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 60px;
+  text-align: center;
+  padding-bottom: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+.hero__btn {
+  background-color: var(--color-primery);
+  padding: 10px 32px;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}/*# sourceMappingURL=main.css.map */
