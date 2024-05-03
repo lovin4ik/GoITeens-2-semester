@@ -9,6 +9,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./styles/main.css" />
+		<script src="./js/modal.js" defer></script>
 	</head>
 	<body>
 		<header class="header">
@@ -23,10 +24,12 @@
 						>
 					</li>
 					<li class="header__menu__item">
-						<a href="../../index.html" class="header__menu__link">Портфоліо</a>
+						<a href="./portfolio/portfolio.html" class="header__menu__link"
+							>Портфоліо</a
+						>
 					</li>
 					<li class="header__menu__item">
-						<a href="../../index.html" class="header__menu__link">Контакти</a>
+						<a href="#footer" class="header__menu__link">Контакти</a>
 					</li>
 				</ul>
 
@@ -552,7 +555,7 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer" id="footer">
 			<div class="wrapper">
 				<ul class="footer__menu">
 					<li>
@@ -585,10 +588,49 @@
 					<h3>Підпишіться на розсилку</h3>
 					<div class="footer__form__link">
 						<input type="text" placeholder="E-mail" />
-						<button>Підписатися</button>
+						<button>
+							Підписатися <img src="./images/svg/tg.svg" alt="tg" />
+						</button>
 					</div>
 				</form>
 			</div>
 		</footer>
+		<div class="off modal">
+			<div class="modal__wrapper">
+				<h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+				<button class="modal__close">
+					<img src="./images/svg/close.svg" alt="close" />
+				</button>
+				<form class="modal__form">
+					<div class="modal__form__wrapper">
+						<label for="name">Ім'я</label>
+						<input type="text" id="name" />
+						<i class="bx bxs-user"></i>
+					</div>
+					<div class="modal__form__wrapper">
+						<label for="phone">Телефон</label>
+						<input type="text" id="phone" />
+						<i class="bx bxs-phone"></i>
+					</div>
+					<div class="modal__form__wrapper">
+						<label for="email">Пошта</label>
+						<input type="text" id="email" />
+						<i class="bx bxs-envelope"></i>
+					</div>
+					<div class="modal__form__wrapper">
+						<label for="textarea">Коментар</label>
+						<textarea id="textarea" placeholder="Введіть текст"></textarea>
+					</div>
+					<div class="modal__form__check">
+						<input type="checkbox" />
+						<p>
+							Погоджуюся з розсилкою та приймаю
+							<a href="./webstudio.html">Умови договору</a>
+						</p>
+					</div>
+					<button class="modal__form__btn">Відправити</button>
+				</form>
+			</div>
+		</div>
 	</body>
 </html>

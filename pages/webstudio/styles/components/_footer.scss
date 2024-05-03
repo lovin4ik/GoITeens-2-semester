@@ -69,6 +69,7 @@
 			padding: 12px 0 20px 0;
 		}
 		&__link {
+			display: flex;
 			> input {
 				background-color: transparent;
 				border-radius: 4px;
@@ -87,6 +88,10 @@
 				font-weight: 700;
 				line-height: 30px;
 				transition: 0.4s;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 10px;
 				&:hover {
 					background-color: var(--color-primery-hover);
 				}

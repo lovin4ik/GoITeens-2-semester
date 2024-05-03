@@ -35,3 +35,10 @@ li {
 address {
 	font-style: normal;
 }
+.off {
+	visibility: hidden;
+	cursor: auto;
+	pointer-events: none;
+	opacity: 0;
+	transition: 0.4s;
+}

@@ -4,7 +4,7 @@
 	top: 0;
 	left: 0;
 	background-color: #ffffff;
-	z-index: 1488;
+	z-index: 99;
 	> .wrapper {
 		padding: 25px 0;
 		display: flex;
@@ -21,6 +21,7 @@
 				color: #000000;
 				font-size: 26px;
 				font-weight: 700;
+				letter-spacing: 1px;
 				> span {
 					font-family: "Raleway", sans-serif;
 					color: var(--color-primery);
@@ -42,9 +43,9 @@
 					content: "";
 					position: absolute;
 					bottom: -31px;
-					left: -2px;
+					left: 0px;
 					border: 1px solid var(--color-primery);
-					width: 48px;
+					width: 100%;
 					background-color: var(--color-primery);
 					border-radius: 2px;
 				}
@@ -57,6 +58,9 @@
 		&__link {
 			color: #757575;
 			transition: ease-in-out 0.4s;
+			> svg {
+				margin-right: 10px;
+			}
 			> svg path {
 				transition: 0.4s;
 			}
