@@ -2,7 +2,7 @@
 	width: calc(50% + 32px);
 	transform: scale(1.1);
 	border-radius: 20px;
-	height: 500px;
+	height: calc(var(--index) * 15);
 	&-slide {
 		border-radius: 20px;
 		background-color: #262931;

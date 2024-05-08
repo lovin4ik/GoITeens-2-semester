@@ -8,20 +8,27 @@
 		min-height: 100vh;
 		> .swiper > .swiper-wrapper > .web-studio {
 			> a {
-				font-size: 32px;
-				font-weight: 500;
-				margin-bottom: 50px;
-				color: #ffffff;
-				font-family: "Roboto", sans-serif;
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+				align-items: center;
+				justify-content: center;
 				> span {
+					font-size: 32px;
+					font-weight: 500;
+					margin-bottom: 50px;
+					color: #ffffff;
+					font-family: "Roboto", sans-serif;
+				}
+				> span > span {
 					color: #2196f3;
 					font-family: "Raleway", sans-serif;
 					font-weight: 700;
 				}
-			}
-			> .webstudio-img {
-				width: 350px;
-				height: 140px;
+				> .webstudio-img {
+					width: 350px;
+					height: 140px;
+				}
 			}
 		}
 	}
@@ -30,7 +37,7 @@
 		padding: 50px 0 50px 50px;
 		width: calc(50% + 32px);
 		border-radius: 20px;
-		height: 500px;
+		height: calc(var(--index) * 15);
 		&__title {
 			color: #abc7ff;
 			font-size: calc(var(--index) * 2);

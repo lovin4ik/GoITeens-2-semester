@@ -15,6 +15,11 @@
 			font-size: calc(var(--index) * 0.9);
 			font-weight: 300;
 			letter-spacing: calc(var(--index) * 0.3);
+			transition: 0.4s ease-in-out;
+			&:hover {
+				transform: scale(1.1);
+				color: var(--color-text-hover);
+			}
 		}
 	}
 	&__menu {
@@ -25,6 +30,10 @@
 			font-size: calc(var(--index) * 0.7);
 			font-weight: 400;
 			letter-spacing: calc(var(--index) * 0.2);
+			transition: 0.4s ease-in-out;
+			&:hover {
+				color: var(--color-text-hover);
+			}
 		}
 	}
 }
