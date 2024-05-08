@@ -58,15 +58,14 @@
 		&__link {
 			color: #757575;
 			transition: ease-in-out 0.4s;
-			> svg {
+			> .icon {
+				fill: #757575;
 				margin-right: 10px;
-			}
-			> svg path {
-				transition: 0.4s;
+				transition: ease-in-out 0.4s;
 			}
 			&:hover {
 				color: var(--color-primery-hover);
-				> svg path {
+				> .icon {
 					fill: var(--color-primery);
 				}
 			}

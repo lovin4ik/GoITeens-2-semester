@@ -46,7 +46,6 @@ address {
 
 .off {
   visibility: hidden;
-  cursor: auto;
   pointer-events: none;
   opacity: 0;
   transition: 0.4s;
@@ -113,16 +112,15 @@ address {
   color: #757575;
   transition: ease-in-out 0.4s;
 }
-.header__address__link > svg {
+.header__address__link > .icon {
+  fill: #757575;
   margin-right: 10px;
-}
-.header__address__link > svg path {
-  transition: 0.4s;
+  transition: ease-in-out 0.4s;
 }
 .header__address__link:hover {
   color: var(--color-primery-hover);
 }
-.header__address__link:hover > svg path {
+.header__address__link:hover > .icon {
   fill: var(--color-primery);
 }
 
@@ -174,6 +172,28 @@ address {
 }
 .info__menu__item {
   max-width: 270px;
+}
+.info__menu__item::before {
+  content: "";
+  background-color: #f5f4fa;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: center;
+  width: 100%;
+  height: 120px;
+}
+.info__menu__item:nth-child(1)::before {
+  background-image: url(../images/svg/antenna.svg);
+}
+.info__menu__item:nth-child(2)::before {
+  background-image: url(../images/svg/clock.svg);
+}
+.info__menu__item:nth-child(3)::before {
+  background-image: url(../images/svg/diagram.svg);
+}
+.info__menu__item:nth-child(4)::before {
+  background-image: url(../images/svg/astronaut.svg);
 }
 .info__menu__item__title {
   font-size: 14px;
@@ -325,14 +345,16 @@ address {
   align-items: center;
   width: 170px;
   height: 92px;
+  transition: 0.4s;
 }
-.clients__menu > li > svg path {
-  transition: 0.3s ease-in-out;
+.clients__menu > li > .icon {
+  fill: #afb1b8;
+  transition: 0.3s;
 }
 .clients__menu > li:hover {
   border: 1px solid var(--color-primery);
 }
-.clients__menu > li:hover > svg path {
+.clients__menu > li:hover > .icon {
   fill: #2196f3;
 }
 
@@ -432,6 +454,9 @@ address {
   justify-content: center;
   gap: 10px;
 }
+.footer__form__link > button > .icon {
+  fill: #fff;
+}
 .footer__form__link > button:hover {
   background-color: var(--color-primery-hover);
 }
@@ -496,12 +521,14 @@ address {
   font-weight: 700;
   line-height: 36px;
   margin: 20px 0 5px 0;
+  margin-left: 25px;
 }
 .projects__list > li > p {
   color: #757575;
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
+  margin-left: 25px;
 }
 
 .modal {

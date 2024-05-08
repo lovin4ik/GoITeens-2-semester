@@ -92,6 +92,9 @@
 				align-items: center;
 				justify-content: center;
 				gap: 10px;
+				> .icon {
+					fill: #fff;
+				}
 				&:hover {
 					background-color: var(--color-primery-hover);
 				}

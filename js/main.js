@@ -1,6 +1,6 @@
 new Swiper('.swiper', {
 	slidesPerView: 1,
-	speed: 800,
+	speed: 600,
 	spaceBetween: 1000,
 	navigation: {
 		nextEl: '.swiper-button-next',

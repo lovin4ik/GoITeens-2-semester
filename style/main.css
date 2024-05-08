@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400;500;700;900&display=swap");
 :root {
   --index: calc(1vw + 1vh);
   --color-text: #e3e2e6;
@@ -51,6 +52,7 @@ li {
   left: 0;
   background-color: var(--color-brand);
   border-bottom: 2px solid #262931;
+  z-index: 1488;
 }
 .header__wrapper {
   display: flex;
@@ -82,6 +84,22 @@ li {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+.hero__wrapper > .swiper > .swiper-wrapper > .web-studio > a {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+.hero__wrapper > .swiper > .swiper-wrapper > .web-studio > a > span {
+  color: #2196f3;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.hero__wrapper > .swiper > .swiper-wrapper > .web-studio > .webstudio-img {
+  width: 350px;
+  height: 140px;
 }
 .hero__cart {
   background-color: #21242a;
@@ -118,9 +136,9 @@ li {
 
 .swiper {
   width: calc(50% + 32px);
-  height: 500px;
   transform: scale(1.1);
   border-radius: 20px;
+  height: 500px;
 }
 .swiper-slide {
   border-radius: 20px;

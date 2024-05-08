@@ -24,12 +24,14 @@
 			align-items: center;
 			width: 170px;
 			height: 92px;
-			> svg path {
-				transition: 0.3s ease-in-out;
+			transition: 0.4s;
+			> .icon {
+				fill: #afb1b8;
+				transition: 0.3s;
 			}
 			&:hover {
 				border: 1px solid var(--color-primery);
-				> svg path {
+				> .icon {
 					fill: #2196f3;
 				}
 			}

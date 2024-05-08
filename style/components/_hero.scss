@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400;500;700;900&display=swap");
 .hero {
 	min-height: 100vh;
 	&__wrapper {
@@ -5,6 +6,24 @@
 		justify-content: center;
 		align-items: center;
 		min-height: 100vh;
+		> .swiper > .swiper-wrapper > .web-studio {
+			> a {
+				font-size: 32px;
+				font-weight: 500;
+				margin-bottom: 50px;
+				color: #ffffff;
+				font-family: "Roboto", sans-serif;
+				> span {
+					color: #2196f3;
+					font-family: "Raleway", sans-serif;
+					font-weight: 700;
+				}
+			}
+			> .webstudio-img {
+				width: 350px;
+				height: 140px;
+			}
+		}
 	}
 	&__cart {
 		background-color: #21242a;
