@@ -48,7 +48,7 @@ address {
   visibility: hidden;
   pointer-events: none;
   opacity: 0;
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 .header {
@@ -98,7 +98,7 @@ address {
   content: "";
   position: absolute;
   bottom: -31px;
-  left: 0px;
+  left: 0;
   border: 1px solid var(--color-primery);
   width: 100%;
   background-color: var(--color-primery);
@@ -114,7 +114,6 @@ address {
 }
 .header__address__link > .icon {
   fill: #757575;
-  margin-right: 10px;
   transition: ease-in-out 0.4s;
 }
 .header__address__link:hover {
@@ -269,10 +268,10 @@ address {
   display: flex;
   align-items: center;
   flex-direction: column;
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0 0 4px 4px;
   background-color: #ffffff;
   padding-bottom: 30px;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.1411764706), 0 1px 3px 0 rgba(0, 0, 0, 0.1215686275);
 }
 .team__list__item > img {
   max-width: 270px;
@@ -439,6 +438,10 @@ address {
   width: 350px;
   color: rgba(255, 255, 255, 0.6);
   margin-right: 12px;
+  outline: none;
+}
+.footer__form__link > input:focus {
+  border: 1px solid var(--color-primery);
 }
 .footer__form__link > button {
   background-color: var(--color-primery);
@@ -495,8 +498,8 @@ address {
 }
 .projects__list > li {
   padding-bottom: 20px;
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.1607843137);
   position: relative;
+  transition: 0.4s ease-in-out;
 }
 .projects__list > li::after {
   content: "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.";
@@ -504,24 +507,30 @@ address {
   top: 0;
   left: 0;
   height: 294px;
-  display: none;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
   align-items: center;
   justify-content: center;
   color: #ffffff;
   width: 100%;
   background-color: rgba(33, 150, 243, 0.8980392157);
   padding: 0 24px;
+  transition: 0.4s ease-in-out;
+}
+.projects__list > li:hover {
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.1607843137), 0 4px 4px 0 rgba(0, 0, 0, 0.0588235294), 0 1px 1px 0 rgba(0, 0, 0, 0.1215686275);
 }
 .projects__list > li:hover::after {
-  display: flex;
+  visibility: visible;
+  opacity: 1;
 }
 .projects__list > li > h3 {
   color: #212121;
   font-size: 18px;
   font-weight: 700;
   line-height: 36px;
-  margin: 20px 0 5px 0;
-  margin-left: 25px;
+  margin: 20px 0 5px 25px;
 }
 .projects__list > li > p {
   color: #757575;
@@ -551,8 +560,8 @@ address {
   background-color: #ffffff;
   padding: 40px;
   position: relative;
-  transition: 0.5s;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
   transform: scale(0);
 }
 .modal__title {
@@ -576,6 +585,11 @@ address {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1019607843);
   background-color: transparent;
+  transition: 0.3s ease-in-out;
+}
+.modal__close:hover {
+  transform: rotate(360deg);
+  fill: var(--color-primery);
 }
 .modal__form {
   display: flex;
@@ -653,9 +667,15 @@ address {
   line-height: 30px;
   border-radius: 4px;
   margin-top: 30px;
+  transition: 0.3s;
+}
+.modal__form__btn:hover {
+  background-color: var(--color-primery-hover);
 }
 
 .modal__on {
   transform: scale(1);
-  transition: 0.5s;
-}/*# sourceMappingURL=main.css.map */
+  transition: 0.2s;
+}
+
+/*# sourceMappingURL=main.css.map */

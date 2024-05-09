@@ -78,6 +78,10 @@
 				width: 350px;
 				color: #ffffff99;
 				margin-right: 12px;
+				outline: none;
+				&:focus {
+					border: 1px solid var(--color-primery);
+				}
 			}
 			> button {
 				background-color: var(--color-primery);
