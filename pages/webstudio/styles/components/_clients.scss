@@ -16,6 +16,9 @@
 	&__menu {
 		display: flex;
 		gap: 30px;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
 		> li {
 			border: 1px solid #afb1b8;
 			border-radius: 4px;
@@ -35,6 +38,20 @@
 					fill: #2196f3;
 				}
 			}
+		}
+	}
+}
+@media (max-width: 1200px) {
+	.clients__menu {
+		> li {
+			width: 226px;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.clients__menu {
+		> li {
+			width: 210px;
 		}
 	}
 }

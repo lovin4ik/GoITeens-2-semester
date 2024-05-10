@@ -10,6 +10,7 @@
 	box-sizing: border-box;
 }
 :root {
+	--height: 100vh;
 	--color-primery: #2196f3;
 	--color-primery-hover: #4fb0ff;
 	--color-dark: #212121;
@@ -40,4 +41,14 @@ address {
 	pointer-events: none;
 	opacity: 0;
 	transition: 0.2s;
+}
+@media (max-width: 1200px) {
+	.wrapper {
+		max-width: 768px;
+	}
+}
+@media (max-width: 767px) {
+	.wrapper {
+		max-width: 480px;
+	}
 }

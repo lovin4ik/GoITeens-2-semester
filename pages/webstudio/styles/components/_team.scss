@@ -20,7 +20,7 @@
 		gap: 30px;
 		align-items: center;
 		justify-content: center;
-		max-width: 270px;
+		flex-wrap: wrap;
 		&__item {
 			display: flex;
 			align-items: center;
@@ -71,6 +71,25 @@
 					font-size: 20px;
 				}
 			}
+		}
+	}
+}
+@media (max-width: 1200px) {
+	.team__list {
+		padding: 0px 15px;
+	}
+	.team__list__item {
+		max-width: 354px;
+		> img {
+			max-width: 354px;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.team__list__item {
+		max-width: 450px;
+		> img {
+			max-width: 450px;
 		}
 	}
 }

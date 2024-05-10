@@ -1,0 +1,128 @@
+.burger{
+
+	&__menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: #fff;
+		z-index: 101;
+		padding: 48px 40px;
+		transform: translateX(0);
+		transition: 0.4s;
+
+		> .burger__close {
+			position: absolute;
+			top: 10px;
+			right: 15px;
+			width: 40px;
+			height: 40px;
+			background-color: transparent;
+			transition: 0.4s;
+			> .icon {
+				fill: #212121;
+				transition: 0.4s;
+			}
+			&:hover {
+				> .icon {
+					transform: rotate(360deg);
+					fill: var(--color-primery);
+				}
+			}
+		}
+	}
+
+	&__list {
+		margin-bottom: calc(var(--height) - 48px - 48px - 210px - 163px - 22px);
+		> li {
+			&:not(:last-child) {
+				margin-bottom: 35px;
+			}
+			> a {
+				font-size: 40px;
+				font-weight: 500;
+				line-height: 46.88px;
+				color: #212121;
+				transition: 0.3s;
+				&:hover {
+					color: var(--color-primery);
+				}
+			}
+			> a.active {
+				color: var(--color-primery);
+			}
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		gap: 32px;
+		flex-direction: column;
+		> li:nth-child(1) {
+			> a {
+				font-size: 34px;
+				line-height: 39.84px;
+			}
+		}
+		> li:nth-child(2) {
+			margin-bottom: 64px;
+		}
+		> li > a {
+			color: #757575;
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 28.13px;
+
+			transition: 0.4s;
+			&:hover {
+				color: var(--color-primery);
+			}
+		}
+	}
+
+	&__links {
+		display: flex;
+		gap: 20px;
+		> li {
+			position: relative;
+			&:not(:last-child)::after {
+				content: "";
+				position: absolute;
+				height: 22px;
+				border: 1px solid #21212133;
+				right: -12px;
+			}
+			> a {
+				color: var(--color-primery);
+				font-size: 18px;
+				font-weight: 500;
+				line-height: 22px;
+				transition: 0.3s;
+				&:hover {
+					color: var(--color-primery-hover);
+				}
+			}
+		}
+	}
+
+}
+.burger__open {
+	width: 24px;
+	flex-direction: column;
+	gap: 4px;
+	background-color: transparent;
+	display: none;
+	> div {
+		border: 1px solid #212121;
+	}
+}
+.burger__off {
+	transform: translateX(100%);
+	transition: 0.4s;
+}
+@media (max-width: 767px) {
+	.burger__open {
+		display: flex;
+	}
+}

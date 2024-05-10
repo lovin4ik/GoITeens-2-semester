@@ -2,7 +2,9 @@
 	background-image: linear-gradient(90deg, #2f303a66 10%, #2f303a66 100%), url(../images/hero-bg.png);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 1600px;
+	background-size: cover;
+	margin: 0 auto;
+	max-width: 1600px;
 	> .wrapper {
 		padding: 200px 0;
 		display: flex;
@@ -19,7 +21,6 @@
 		padding-bottom: 30px;
 		color: #ffffff;
 		text-transform: uppercase;
-		letter-spacing: 6px;
 	}
 	&__btn {
 		background-color: var(--color-primery);
@@ -33,6 +34,20 @@
 		transition: 0.4s;
 		&:hover {
 			background-color: var(--color-primery-hover);
+		}
+	}
+}
+@media (max-width: 1200px) {
+	.hero {
+		background-image: linear-gradient(90deg, #2f303a66 10%, #2f303a66 100%), url(../images/hero-mobile.png);
+		> .wrapper {
+			padding: 118px 0;
+		}
+		&__title {
+			font-size: 26px;
+			font-weight: 900;
+			line-height: 42px;
+			max-width: 360px;
 		}
 	}
 }

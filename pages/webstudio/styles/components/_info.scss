@@ -3,6 +3,9 @@
 	&__menu {
 		display: flex;
 		gap: 30px;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
 		&__item {
 			max-width: 270px;
 			&::before {
@@ -37,6 +40,27 @@
 				font-weight: 400;
 				font-size: 14px;
 				line-height: 24px;
+			}
+		}
+	}
+}
+@media (max-width: 1200px) {
+	.info {
+		> .wrapper {
+			padding: 0 15px;
+		}
+		&__menu {
+			&__item {
+				max-width: 354px;
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.info {
+		&__menu {
+			&__item {
+				max-width: 450px;
 			}
 		}
 	}
