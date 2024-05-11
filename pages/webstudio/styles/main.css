@@ -450,7 +450,7 @@ address {
   align-items: center;
   justify-content: center;
 }
-.clients__menu > li {
+.clients__menu > li > a {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   display: flex;
@@ -460,19 +460,19 @@ address {
   height: 92px;
   transition: 0.4s;
 }
-.clients__menu > li > .icon {
+.clients__menu > li > a > .icon {
   fill: #afb1b8;
   transition: 0.3s;
 }
-.clients__menu > li:hover {
+.clients__menu > li > a:hover {
   border: 1px solid var(--color-primery);
 }
-.clients__menu > li:hover > .icon {
+.clients__menu > li > a:hover > .icon {
   fill: #2196f3;
 }
 
 @media (max-width: 1200px) {
-  .clients__menu > li {
+  .clients__menu > li > a {
     width: 226px;
   }
 }
@@ -496,7 +496,6 @@ address {
   display: flex;
   gap: 20px;
   flex-direction: column;
-  align-items: center;
 }
 .footer__menu {
   display: flex;
@@ -599,6 +598,9 @@ address {
 }
 
 @media (max-width: 1200px) {
+  .footer__first {
+    align-items: center;
+  }
   .footer > .wrapper {
     column-gap: 165px;
   }
@@ -640,6 +642,8 @@ address {
   display: flex;
   gap: 10px;
   margin-bottom: 50px;
+  flex-wrap: wrap;
+  padding: 0 15px;
 }
 .projects__sort > li > button {
   padding: 6px 25px;
@@ -663,6 +667,11 @@ address {
   padding-bottom: 20px;
   position: relative;
   transition: 0.4s ease-in-out;
+  width: 370px;
+}
+.projects__list > li > img {
+  height: 294px;
+  width: 100%;
 }
 .projects__list > li::after {
   content: "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.";
@@ -703,6 +712,22 @@ address {
   margin-left: 25px;
 }
 
+@media (max-width: 1200px) {
+  .projects__list > li {
+    width: 354px;
+  }
+}
+@media (max-width: 767px) {
+  .projects__list {
+    align-items: center;
+  }
+  .projects__list > li {
+    width: 450px;
+  }
+  .projects__list > li > img {
+    width: 100%;
+  }
+}
 .modal {
   position: fixed;
   opacity: 1;

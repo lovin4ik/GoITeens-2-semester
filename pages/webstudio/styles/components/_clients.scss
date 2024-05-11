@@ -20,22 +20,25 @@
 		align-items: center;
 		justify-content: center;
 		> li {
-			border: 1px solid #afb1b8;
-			border-radius: 4px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 170px;
-			height: 92px;
-			transition: 0.4s;
-			> .icon {
-				fill: #afb1b8;
-				transition: 0.3s;
-			}
-			&:hover {
-				border: 1px solid var(--color-primery);
+			> a {
+				border: 1px solid #afb1b8;
+				border-radius: 4px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 170px;
+				height: 92px;
+				transition: 0.4s;
 				> .icon {
-					fill: #2196f3;
+					fill: #afb1b8;
+					transition: 0.3s;
+				}
+				&:hover {
+					border: 1px solid var(--color-primery);
+					> .icon {
+						fill: #2196f3;
+
+					}
 				}
 			}
 		}
@@ -43,7 +46,7 @@
 }
 @media (max-width: 1200px) {
 	.clients__menu {
-		> li {
+		> li > a{
 			width: 226px;
 		}
 	}

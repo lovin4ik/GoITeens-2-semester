@@ -10,6 +10,8 @@
 		display: flex;
 		gap: 10px;
 		margin-bottom: 50px;
+		flex-wrap: wrap;
+		padding: 0 15px;
 		> li > button {
 			padding: 6px 25px;
 			background-color: #f5f4fa;
@@ -32,6 +34,11 @@
 			padding-bottom: 20px;
 			position: relative;
 			transition: 0.4s ease-in-out;
+			width: 370px;
+			> img {
+				height: 294px;
+				width: 100%;
+			}
 			&::after {
 				content: "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.";
 				position: absolute;
@@ -69,6 +76,24 @@
 				font-weight: 400;
 				line-height: 30px;
 				margin-left: 25px;
+			}
+		}
+	}
+}
+@media (max-width: 1200px) {
+	.projects__list {
+		> li {
+			width: 354px;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.projects__list	 {
+		align-items: center;
+		> li {
+			width: 450px;
+			> img {
+				width: 100%;
 			}
 		}
 	}
