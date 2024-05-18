@@ -1,0 +1,121 @@
+body {
+	background-color: #F3F6F7;
+	color: #1a1a1a;
+}
+.header {
+	background-color: #1a1b1f;
+	padding: 20px 15px;
+	position: sticky;
+	top: 0;
+	left: 0;
+}
+.logo {
+	font-size: 24px;
+	font-weight: 300;
+	letter-spacing: 6px;
+	transition: 0.4s;
+}
+.logo:hover {
+	color: var(--color-text-hover)
+}
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	gap: 200px;
+}
+.center > .container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 220px;
+	height: 220px;
+}
+.center > .container > h2 {
+	position: absolute;
+	top: -50px;
+	left: 50%;
+}
+.center > .container > .container-1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #ff8888;
+	width: 100px;
+	height: 100px;
+}
+.center > .container > .container-2 {
+	position: absolute;
+	background-color: #7e8aeb;
+	width: 100px;
+	height: 100px;
+	z-index: 2;
+}
+.center > .container > .container-3 {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-color: #4def99;
+	width: 100px;
+	height: 100px;
+}
+.center > .logo__figma {
+	position: relative;
+	height: 411px;
+	width: 274px;
+}
+.center > .logo__figma > .container-1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #f25324;
+	width: 137px;
+	height: 137px;
+	border-radius: 100px 0 0 100px;
+}
+.center > .logo__figma > .container-2{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: #ff7568;
+	width: 137px;
+	height: 137px;
+	border-radius: 0 100px 100px 0;
+
+}
+.center > .logo__figma > .container-3{
+	position: absolute;
+	left: 0;
+	top: 137px;
+	background-color: #a55eff;
+	width: 137px;
+	height: 137px;
+	border-radius: 100px 0 0 100px;
+
+}
+.center > .logo__figma > .container-4{
+	position: absolute;
+	right: 0;
+	top: 137px;
+	border-radius: 50%;
+	background-color: #21befd;
+	width: 137px;
+	height: 137px;
+}
+.center > .logo__figma > .container-5{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: #12d088;
+	width: 137px;
+	height: 137px;
+	border-radius: 100px 0 100px 100px;
+}
+.center > .logo__figma > h2 {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	text-align: center;
+}

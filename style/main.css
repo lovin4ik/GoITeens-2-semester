@@ -1,51 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400;500;700;900&display=swap");
-:root {
-  --index: calc(1vw + 1vh);
-  --color-text: #e3e2e6;
-  --color-text-hover: #8d7eb9;
-  --color-brand: #1a1b1f;
-  --swiper-theme-color: #abc7ff;
-  --swiper-navigation-size: 30px;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: var(--color-brand);
-  color: var(--color-text);
-  overflow-x: hidden;
-}
-
-a {
-  text-decoration: none;
-  color: var(--color-text);
-}
-
-button {
-  border: none;
-  cursor: pointer;
-}
-
-.wrapper {
-  max-width: 1220px;
-  margin: 0 auto;
-}
-
-li {
-  list-style: none;
-}
-
 .header {
   width: 100%;
   position: fixed;
@@ -182,4 +135,56 @@ li {
 .swiper-button-disabled {
   transform: scale(0);
   transition: 0.4s;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.projects {
+  margin: 90px 0;
+}
+.projects > .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 90px;
+}
+.projects__title {
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.projects__menu {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.projects__menu__item {
+  padding: 15px 20px;
+  border: 1px solid #2c2c2c;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+}
+.projects__menu__item__title {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+}
+.projects__menu__item > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects__menu__item > a > .web-studio {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.projects__menu__item > a > .web-studio > span {
+  font-family: "Raleway", sans-serif;
+  color: #2196f3;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=main.css.map */

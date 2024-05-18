@@ -1,0 +1,51 @@
+.projects {
+	margin: 90px 0;
+	> .wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		gap: 90px;
+	}
+	&__title {
+		font-size: 34px;
+		font-weight: 600;
+		letter-spacing: 3px;
+	}
+	&__menu {
+		display: flex;
+		gap: 30px;
+		flex-wrap: wrap;
+		align-items: center;
+
+		&__item {
+			padding: 15px 20px;
+			border: 1px solid #2c2c2c;
+			border-radius: 10px;
+			width: 200px;
+			height: 100px;
+
+			&__title {
+				font-size: 22px;
+				font-weight: 400;
+				text-align: center;
+			}
+			> a {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			> a > .web-studio {
+				font-family: "Roboto", sans-serif;
+				font-weight: 500;
+				> span {
+					font-family: "Raleway", sans-serif;
+					color: #2196f3;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}
