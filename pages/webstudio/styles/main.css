@@ -745,6 +745,7 @@ address {
   left: 0;
 }
 .modal__wrapper {
+  border-radius: 4px;
   opacity: 1;
   width: 528px;
   z-index: 101;
