@@ -123,7 +123,8 @@ address {
 .header__address {
   display: flex;
   row-gap: 10px;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   flex-wrap: wrap;
   margin-left: auto;
 }
@@ -133,7 +134,8 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   font-size: 14px;
   font-weight: 500;
   line-height: 16.41px;
@@ -602,7 +604,8 @@ address {
     align-items: center;
   }
   .footer > .wrapper {
-    column-gap: 165px;
+    -moz-column-gap: 165px;
+         column-gap: 165px;
   }
   .footer__menu {
     align-items: center;
@@ -814,17 +817,28 @@ address {
   border: 1px solid var(--color-primery);
 }
 .modal__form__wrapper > input:hover + * {
-  color: var(--color-primery);
+  fill: var(--color-primery);
 }
 .modal__form__wrapper > input:focus + * {
-  color: var(--color-primery);
+  fill: var(--color-primery);
 }
 .modal__form__wrapper > i {
   position: absolute;
-  top: 60%;
+  top: 33px;
   left: 12px;
   font-size: 12px;
   transition: 0.4s;
+  fill: #212121;
+  color: #212121;
+}
+.modal__form__wrapper > svg {
+  position: absolute;
+  top: 33px;
+  left: 12px;
+  font-size: 12px;
+  transition: 0.4s;
+  fill: #212121;
+  color: #212121;
 }
 .modal__form__wrapper > textarea {
   resize: none;
@@ -997,6 +1011,4 @@ address {
   .burger__open {
     display: flex;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

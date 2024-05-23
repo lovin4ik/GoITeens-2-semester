@@ -16,57 +16,54 @@
 		<header class="header">
 			<div class="wrapper">
 				<nav class="header__nav">
-
-					<a href="../../index.html" class="header__logo"><span>Web</span>Studio</a>
+					<a href="../../index.html" class="header__logo"
+						><span>Web</span>Studio</a
+					>
 
 					<ul class="header__menu">
 						<li class="header__menu__item">
 							<a href="../../index.html" class="header__menu__link active"
-							>Студія</a
+								>Студія</a
 							>
 						</li>
 						<li class="header__menu__item">
 							<a href="./portfolio/portfolio.html" class="header__menu__link"
-							>Портфоліо</a
+								>Портфоліо</a
 							>
 						</li>
 						<li class="header__menu__item">
 							<a href="#footer" class="header__menu__link">Контакти</a>
 						</li>
 					</ul>
-
 				</nav>
 
-					<ul class="header__address">
+				<ul class="header__address">
+					<li>
+						<a href="tel:+380961111111" class="header__address__link">
+							<svg class="icon" width="16px" height="12px">
+								<use xlink:href="./images/svg/sprite.svg#email"></use>
+							</svg>
 
-						<li>
-							<a href="tel:+380961111111" class="header__address__link">
-								<svg class="icon" width="16px" height="12px">
-									<use xlink:href="./images/svg/sprite.svg#email"></use>
-								</svg>
+							info@devstudio.com
+						</a>
+					</li>
 
-								info@devstudio.com
-							</a>
-						</li>
+					<li>
+						<a href="mailto:info@devstudio.com" class="header__address__link">
+							<svg class="icon" width="16px" height="12px">
+								<use xlink:href="./images/svg/sprite.svg#phone"></use>
+							</svg>
 
-						<li>
-							<a href="mailto:info@devstudio.com" class="header__address__link">
-								<svg class="icon" width="16px" height="12px">
-									<use xlink:href="./images/svg/sprite.svg#phone"></use>
-								</svg>
-
-								+38 096 111 11 11
-							</a>
-						</li>
-
-					</ul>
+							+38 096 111 11 11
+						</a>
+					</li>
+				</ul>
 
 				<button class="burger__open">
 					<div></div>
 					<div></div>
 					<div></div>
 				</button>
-				
 			</div>
 		</header>
 		<main>
@@ -329,7 +326,9 @@
 					<div class="modal__form__wrapper">
 						<label for="phone">Телефон</label>
 						<input type="text" id="phone" />
-						<i class="bx bxs-phone"></i>
+						<svg width="13px" height="13px">
+							<use xlink:href="./images/svg/sprite.svg#phone-modal"></use>
+						</svg>
 					</div>
 					<div class="modal__form__wrapper">
 						<label for="email">Пошта</label>
@@ -352,7 +351,6 @@
 			</div>
 		</div>
 		<div class="burger__menu burger__off">
-
 			<button class="burger__close">
 				<svg class="icon" width="18px" height="18px">
 					<use xlink:href="./images/svg/sprite.svg#close"></use>
@@ -360,9 +358,17 @@
 			</button>
 
 			<ul class="burger__list">
-				<li><a href="./webstudio.html" class="burger__list__link active">Студія</a></li>
-				<li><a href="./webstudio.html" class="burger__list__link">Портфоліо</a></li>
-				<li><a href="./webstudio.html" class="burger__list__link">Контакти</a></li>
+				<li>
+					<a href="./webstudio.html" class="burger__list__link active"
+						>Студія</a
+					>
+				</li>
+				<li>
+					<a href="./webstudio.html" class="burger__list__link">Портфоліо</a>
+				</li>
+				<li>
+					<a href="./webstudio.html" class="burger__list__link">Контакти</a>
+				</li>
 			</ul>
 
 			<ul class="burger__contacts">
@@ -376,7 +382,6 @@
 				<li><a href="./webstudio.html">Facebook</a></li>
 				<li><a href="./webstudio.html">LinkedIn</a></li>
 			</ul>
-
 		</div>
 	</body>
 </html>
