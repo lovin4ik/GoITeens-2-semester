@@ -897,6 +897,10 @@ address {
     font-weight: 400;
   }
 }
+.no-scroll {
+  overflow-y: hidden;
+}
+
 .burger__menu {
   position: fixed;
   top: 0;
