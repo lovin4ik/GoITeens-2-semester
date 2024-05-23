@@ -85,9 +85,11 @@
 				}
 				&:hover + * {
 					fill: var(--color-primery);
+					color: var(--color-primery);
 				}
 				&:focus + * {
 					fill: var(--color-primery);
+					color: var(--color-primery);
 				}
 			}
 			> i {
@@ -114,6 +116,11 @@
 				height: 120px;
 				border: 1px solid #21212133;
 				border-radius: 4px;
+				outline: none;
+				transition: 0.3s;
+				&:hover {
+					border-color: var(--color-primery);
+				}
 			}
 		}
 		&__check {

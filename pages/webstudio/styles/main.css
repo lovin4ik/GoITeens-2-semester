@@ -819,9 +819,11 @@ address {
 }
 .modal__form__wrapper > input:hover + * {
   fill: var(--color-primery);
+  color: var(--color-primery);
 }
 .modal__form__wrapper > input:focus + * {
   fill: var(--color-primery);
+  color: var(--color-primery);
 }
 .modal__form__wrapper > i {
   position: absolute;
@@ -847,6 +849,11 @@ address {
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
+  transition: 0.3s;
+}
+.modal__form__wrapper > textarea:hover {
+  border-color: var(--color-primery);
 }
 .modal__form__check > p {
   font-size: 14px;
@@ -971,6 +978,9 @@ address {
 .burger__contacts > li > a:hover {
   color: var(--color-primery);
 }
+.burger__contacts > li > a:active {
+  color: var(--color-primery);
+}
 .burger__links {
   display: flex;
   gap: 20px;
@@ -1005,6 +1015,11 @@ address {
 }
 .burger__open > div {
   border: 1px solid #212121;
+  width: 100%;
+  transition: 0.4s;
+}
+.burger__open:hover > div {
+  border-color: var(--color-primery);
 }
 
 .burger__off {

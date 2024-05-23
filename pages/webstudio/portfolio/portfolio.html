@@ -12,62 +12,57 @@
 		<script src="../js/burger.js" defer></script>
 	</head>
 	<body>
-	<header class="header">
-		<div class="wrapper">
-			<nav class="header__nav">
+		<header class="header">
+			<div class="wrapper">
+				<nav class="header__nav">
+					<a href="../../../index.html" class="header__logo"
+						><span>Web</span>Studio</a
+					>
 
-				<a href="../../../index.html" class="header__logo"><span>Web</span>Studio</a>
+					<ul class="header__menu">
+						<li class="header__menu__item">
+							<a href="../webstudio.html" class="header__menu__link">Студія</a>
+						</li>
+						<li class="header__menu__item">
+							<a href="./portfolio.html" class="header__menu__link active"
+								>Портфоліо</a
+							>
+						</li>
+						<li class="header__menu__item">
+							<a href="#footer" class="header__menu__link">Контакти</a>
+						</li>
+					</ul>
+				</nav>
 
-				<ul class="header__menu">
-					<li class="header__menu__item">
-						<a href="../webstudio.html" class="header__menu__link"
-						>Студія</a
-						>
+				<ul class="header__address">
+					<li>
+						<a href="tel:+380961111111" class="header__address__link">
+							<svg class="icon" width="16px" height="12px">
+								<use xlink:href="../images/svg/sprite.svg#email"></use>
+							</svg>
+
+							info@devstudio.com
+						</a>
 					</li>
-					<li class="header__menu__item">
-						<a href="./portfolio.html" class="header__menu__link active"
-						>Портфоліо</a
-						>
-					</li>
-					<li class="header__menu__item">
-						<a href="#footer" class="header__menu__link">Контакти</a>
+
+					<li>
+						<a href="mailto:info@devstudio.com" class="header__address__link">
+							<svg class="icon" width="16px" height="12px">
+								<use xlink:href="../images/svg/sprite.svg#phone"></use>
+							</svg>
+
+							+38 096 111 11 11
+						</a>
 					</li>
 				</ul>
 
-			</nav>
-
-			<ul class="header__address">
-
-				<li>
-					<a href="tel:+380961111111" class="header__address__link">
-						<svg class="icon" width="16px" height="12px">
-							<use xlink:href="../images/svg/sprite.svg#email"></use>
-						</svg>
-
-						info@devstudio.com
-					</a>
-				</li>
-
-				<li>
-					<a href="mailto:info@devstudio.com" class="header__address__link">
-						<svg class="icon" width="16px" height="12px">
-							<use xlink:href="../images/svg/sprite.svg#phone"></use>
-						</svg>
-
-						+38 096 111 11 11
-					</a>
-				</li>
-
-			</ul>
-
-			<button class="burger__open">
-				<div></div>
-				<div></div>
-				<div></div>
-			</button>
-
-		</div>
-	</header>
+				<button class="burger__open">
+					<div></div>
+					<div></div>
+					<div></div>
+				</button>
+			</div>
+		</header>
 		<main>
 			<section class="projects">
 				<div class="wrapper">
@@ -141,39 +136,38 @@
 					</ul>
 				</div>
 				<div class="footer__join">
-				<h3>приєднуйтесь</h3>
-				<ul class="footer__join__links">
-					<li>
-						<a href="../webstudio.html"><i class="bx bxl-instagram"></i></a>
-					</li>
-					<li>
-						<a href="../webstudio.html"><i class="bx bxl-twitter"></i></a>
-					</li>
-					<li>
-						<a href="../webstudio.html"><i class="bx bxl-facebook"></i></a>
-					</li>
-					<li>
-						<a href="../webstudio.html"><i class="bx bxl-linkedin"></i></a>
-					</li>
-				</ul>
-			</div>
-			<form class="footer__form">
-				<h3>Підпишіться на розсилку</h3>
-				<div class="footer__form__link">
-					<input type="text" placeholder="E-mail" />
-					<button>
-						Підписатися
-						<svg class="icon" width="24px" height="24px">
-							<use xlink:href="../images/svg/sprite.svg#tg"></use>
-						</svg>
-					</button>
+					<h3>приєднуйтесь</h3>
+					<ul class="footer__join__links">
+						<li>
+							<a href="../webstudio.html"><i class="bx bxl-instagram"></i></a>
+						</li>
+						<li>
+							<a href="../webstudio.html"><i class="bx bxl-twitter"></i></a>
+						</li>
+						<li>
+							<a href="../webstudio.html"><i class="bx bxl-facebook"></i></a>
+						</li>
+						<li>
+							<a href="../webstudio.html"><i class="bx bxl-linkedin"></i></a>
+						</li>
+					</ul>
 				</div>
-			</form>
-		</div>
-	</footer>
+				<form class="footer__form">
+					<h3>Підпишіться на розсилку</h3>
+					<div class="footer__form__link">
+						<input type="text" placeholder="E-mail" />
+						<button>
+							Підписатися
+							<svg class="icon" width="24px" height="24px">
+								<use xlink:href="../images/svg/sprite.svg#tg"></use>
+							</svg>
+						</button>
+					</div>
+				</form>
+			</div>
+		</footer>
 
 		<div class="burger__menu burger__off">
-
 			<button class="burger__close">
 				<svg class="icon" width="18px" height="18px">
 					<use xlink:href="./images/svg/sprite.svg#close"></use>
@@ -181,9 +175,17 @@
 			</button>
 
 			<ul class="burger__list">
-				<li><a href="../webstudio.html" class="burger__list__link active">Студія</a></li>
-				<li><a href="../webstudio.html" class="burger__list__link">Портфоліо</a></li>
-				<li><a href="../webstudio.html" class="burger__list__link">Контакти</a></li>
+				<li>
+					<a href="../webstudio.html" class="burger__list__link">Студія</a>
+				</li>
+				<li>
+					<a href="../webstudio.html" class="burger__list__link active"
+						>Портфоліо</a
+					>
+				</li>
+				<li>
+					<a href="../webstudio.html" class="burger__list__link">Контакти</a>
+				</li>
 			</ul>
 
 			<ul class="burger__contacts">
@@ -197,7 +199,6 @@
 				<li><a href="../webstudio.html">Facebook</a></li>
 				<li><a href="../webstudio.html">LinkedIn</a></li>
 			</ul>
-
 		</div>
 	</body>
 </html>

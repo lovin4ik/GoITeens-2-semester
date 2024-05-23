@@ -1,5 +1,4 @@
-.burger{
-
+.burger {
 	&__menu {
 		position: fixed;
 		top: 0;
@@ -78,6 +77,9 @@
 			&:hover {
 				color: var(--color-primery);
 			}
+			&:active {
+				color: var(--color-primery);
+			}
 		}
 	}
 
@@ -105,7 +107,6 @@
 			}
 		}
 	}
-
 }
 .burger__open {
 	width: 24px;
@@ -115,6 +116,13 @@
 	display: none;
 	> div {
 		border: 1px solid #212121;
+		width: 100%;
+		transition: 0.4s;
+	}
+	&:hover {
+		> div {
+			border-color: var(--color-primery);
+		}
 	}
 }
 .burger__off {
