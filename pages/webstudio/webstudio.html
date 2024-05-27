@@ -320,19 +320,19 @@
 				<form class="modal__form">
 					<div class="modal__form__wrapper">
 						<label for="name">Ім'я</label>
-						<input type="text" id="name" />
+						<input type="text" id="name" required minlength="2" />
 						<i class="bx bxs-user"></i>
 					</div>
 					<div class="modal__form__wrapper">
 						<label for="phone">Телефон</label>
-						<input type="text" id="phone" />
+						<input type="texs" id="phone" minlength="10" required />
 						<svg width="13px" height="13px">
 							<use xlink:href="./images/svg/sprite.svg#phone-modal"></use>
 						</svg>
 					</div>
 					<div class="modal__form__wrapper">
 						<label for="email">Пошта</label>
-						<input type="text" id="email" />
+						<input type="email" id="email" required />
 						<i class="bx bxs-envelope"></i>
 					</div>
 					<div class="modal__form__wrapper">
