@@ -167,6 +167,13 @@
 		}
 	}
 }
+@media (max-width: 450px) {
+	.modal {
+		&__wrapper {
+			width: calc(100vw - 30px);
+		}
+	}
+}
 .no-scroll {
 	overflow-y: hidden;
 }
