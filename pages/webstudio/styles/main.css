@@ -55,6 +55,12 @@ address {
     max-width: 480px;
   }
 }
+.modal__form, .modal__close, .modal, .footer__form__link > button, .footer > .wrapper, .clients > .wrapper, .header__address__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header {
   width: 100%;
   position: sticky;
@@ -123,9 +129,6 @@ address {
 .header__address__link {
   color: #757575;
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   column-gap: 10px;
   font-size: 14px;
   font-weight: 500;
@@ -168,6 +171,12 @@ address {
     pointer-events: none;
   }
 }
+.modal__form, .modal__close, .modal, .footer__form__link > button, .footer > .wrapper, .clients > .wrapper, .header__address__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero {
   background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 10%, rgba(47, 48, 58, 0.4) 100%), url(../images/hero-bg.png);
   background-position: center;
@@ -196,12 +205,12 @@ address {
 .hero__btn {
   background-color: #2196f3;
   padding: 10px 32px;
-  color: #fff;
+  color: #ffffff;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
-  letter-spacing: 2px;
   line-height: 30px;
+  letter-spacing: 2px;
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__btn:hover {
@@ -420,13 +429,16 @@ address {
     max-width: 450px;
   }
 }
+.modal__form, .modal__close, .modal, .footer__form__link > button, .footer > .wrapper, .clients > .wrapper, .header__address__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .clients {
   margin-bottom: 95px;
 }
 .clients > .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 .clients__title {
@@ -474,16 +486,25 @@ address {
     width: 210px;
   }
 }
+.modal__form, .modal__close, .modal, .footer__form__link > button, .footer > .wrapper, .header__address__link, .clients > .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__form, .modal__close, .modal, .footer__form__link > button, .footer > .wrapper, .header__address__link, .clients > .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer {
   background-color: #2f303a;
   padding: 60px 0;
 }
 .footer > .wrapper {
-  display: flex;
   gap: 70px;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 }
 .footer__first {
   display: flex;
@@ -578,9 +599,6 @@ address {
   font-weight: 700;
   line-height: 30px;
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 10px;
 }
 .footer__form__link > button > .icon {
@@ -611,9 +629,6 @@ address {
     flex-direction: column;
   }
   .footer__form__link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
     gap: 20px;
   }
@@ -724,6 +739,18 @@ address {
     width: 100%;
   }
 }
+.modal__form, .modal__close, .modal, .header__address__link, .clients > .wrapper, .footer > .wrapper, .footer__form__link > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__form, .modal__close, .modal, .header__address__link, .clients > .wrapper, .footer > .wrapper, .footer__form__link > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .modal {
   position: fixed;
   opacity: 1;
@@ -731,9 +758,6 @@ address {
   min-height: 100vh;
   min-width: 100vw;
   z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   top: 0;
   left: 0;
 }
@@ -746,7 +770,7 @@ address {
   padding: 40px;
   position: relative;
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.1411764706), 0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.1411764706), 0 1px 3px 0 rgba(0, 0, 0, 0.1215686275);
   transform: scale(0);
 }
 .modal__title {
@@ -759,9 +783,6 @@ address {
 }
 .modal__close {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 30px;
   height: 30px;
   right: 8px;
@@ -777,10 +798,7 @@ address {
   fill: #2196f3;
 }
 .modal__form {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 .modal__form__wrapper {
   margin-bottom: 10px;
@@ -863,12 +881,12 @@ address {
 }
 .modal__form__btn {
   background-color: #2196f3;
-  color: #ffffff;
   padding: 10px 52px;
+  color: #ffffff;
+  border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
-  border-radius: 4px;
   margin-top: 30px;
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }

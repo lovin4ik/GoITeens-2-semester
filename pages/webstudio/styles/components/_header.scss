@@ -1,4 +1,5 @@
 @import '../utils/variables';
+@import '../utils/placeholders';
 .header {
 	width: 100%;
 	position: sticky;
@@ -67,9 +68,7 @@
 		&__link {
 			color: #757575;
 			transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-			display: flex;
-			align-items: center;
-			justify-content: center;
+			@extend %flex-center;
 			column-gap: 10px;
 			font-size: 14px;
 			font-weight: 500;

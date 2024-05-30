@@ -1,10 +1,9 @@
 @import '../utils/variables';
+@import '../utils/placeholders';
 .clients {
 	margin-bottom: 95px;
 	> .wrapper {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		@extend %flex-center;
 		flex-direction: column;
 	}
 	&__title {

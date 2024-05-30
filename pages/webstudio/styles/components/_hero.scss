@@ -1,4 +1,5 @@
 @import '../utils/variables';
+@import '../utils/mixins';
 .hero {
 	background-image: linear-gradient(90deg, #2f303a66 10%, #2f303a66 100%), url(../images/hero-bg.png);
 	background-position: center;
@@ -24,14 +25,8 @@
 		text-transform: uppercase;
 	}
 	&__btn {
-		background-color: $color-primery;
-		padding: 10px 32px;
-		color: #fff;
-		border-radius: 4px;
-		font-size: 16px;
-		font-weight: 700;
+		@include button(10px, 32px);
 		letter-spacing: 2px;
-		line-height: 30px;
 		transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 		&:hover {
 			background-color: $color-primery-hover;

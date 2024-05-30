@@ -1,4 +1,6 @@
 @import '../utils/variables';
+@import '../utils/mixins';
+@import '../utils/placeholders';
 .modal {
 	position: fixed;
 	opacity: 1;
@@ -6,9 +8,7 @@
 	min-height: 100vh;
 	min-width: 100vw;
 	z-index: 100;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@extend %flex-center;
 	top: 0;
 	left: 0;
 	&__wrapper {
@@ -21,9 +21,9 @@
 		position: relative;
 		transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 		box-shadow:
-			0px 2px 1px 0px #00000033,
-			0px 1px 1px 0px #00000024,
-			0px 1px 3px 0px #0000001f;
+			0 2px 1px 0 #00000033,
+			0 1px 1px 0 #00000024,
+			0 1px 3px 0 #0000001f;
 		transform: scale(0);
 	}
 	&__title {
@@ -36,9 +36,7 @@
 	}
 	&__close {
 		position: absolute;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		@extend %flex-center;
 		width: 30px;
 		height: 30px;
 		right: 8px;
@@ -54,10 +52,8 @@
 		}
 	}
 	&__form {
-		display: flex;
+		@extend %flex-center;
 		flex-direction: column;
-		align-items: center;
-		justify-content: center;
 		&__wrapper {
 			margin-bottom: 10px;
 			display: flex;
@@ -140,13 +136,7 @@
 			}
 		}
 		&__btn {
-			background-color: $color-primery;
-			color: #ffffff;
-			padding: 10px 52px;
-			font-size: 16px;
-			font-weight: 700;
-			line-height: 30px;
-			border-radius: 4px;
+			@include button(10px, 52px	);
 			margin-top: 30px;
 			transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 			&:hover {

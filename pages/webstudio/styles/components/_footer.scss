@@ -1,13 +1,13 @@
 @import '../utils/variables';
+@import '../utils/placeholders';
+@import '../utils/mixins';
 .footer {
 	background-color: #2f303a;
 	padding: 60px 0;
 	> .wrapper {
-		display: flex;
+		@extend %flex-center;
 		gap: 70px;
 		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
 	}
 	&__first {
 		display: flex;
@@ -94,17 +94,9 @@
 				}
 			}
 			> button {
-				background-color: $color-primery;
-				padding: 10px 28px;
-				color: #ffffff;
-				border-radius: 4px;
-				font-size: 16px;
-				font-weight: 700;
-				line-height: 30px;
+				@include button(10px, 28px);
+				@extend %flex-center;
 				transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-				display: flex;
-				align-items: center;
-				justify-content: center;
 				gap: 10px;
 				> .icon {
 					fill: #fff;
@@ -138,9 +130,6 @@
 		justify-content: center;
 		flex-direction: column;
 		&__link {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
 			justify-content: center;
 			gap: 20px;
 			> input {

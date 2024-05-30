@@ -1,0 +1,11 @@
+@import './variables';
+@import './placeholders';
+@mixin button ($padding-vertical, $padding-horizontal) {
+	background-color: $color-primery;
+	padding: $padding-vertical $padding-horizontal;
+	color: #ffffff;
+	border-radius: 4px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 30px;
+}
