@@ -1,3 +1,4 @@
+@import '../utils/variables';
 .burger {
 	&__menu {
 		position: fixed;
@@ -9,7 +10,7 @@
 		z-index: 101;
 		padding: 48px 40px;
 		transform: translateX(0);
-		transition: 0.4s;
+		transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
 		> .burger__close {
 			position: absolute;
@@ -18,22 +19,22 @@
 			width: 40px;
 			height: 40px;
 			background-color: transparent;
-			transition: 0.4s;
+			transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 			> .icon {
 				fill: #212121;
-				transition: 0.4s;
+				transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 			}
 			&:hover {
 				> .icon {
 					transform: rotate(360deg);
-					fill: var(--color-primery);
+					fill: $color-primery;
 				}
 			}
 		}
 	}
 
 	&__list {
-		margin-bottom: calc(var(--height) - 48px - 48px - 210px - 163px - 22px);
+		margin-bottom: calc($height - 48px - 48px - 210px - 163px - 22px);
 		> li {
 			&:not(:last-child) {
 				margin-bottom: 35px;
@@ -43,13 +44,13 @@
 				font-weight: 500;
 				line-height: 46.88px;
 				color: #212121;
-				transition: 0.3s;
+				transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 				&:hover {
-					color: var(--color-primery);
+					color: $color-primery;
 				}
 			}
 			> a.active {
-				color: var(--color-primery);
+				color: $color-primery;
 			}
 		}
 	}
@@ -73,12 +74,12 @@
 			font-weight: 500;
 			line-height: 28.13px;
 
-			transition: 0.4s;
+			transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 			&:hover {
-				color: var(--color-primery);
+				color: $color-primery;
 			}
 			&:active {
-				color: var(--color-primery);
+				color: $color-primery;
 			}
 		}
 	}
@@ -96,13 +97,13 @@
 				right: -12px;
 			}
 			> a {
-				color: var(--color-primery);
+				color: $color-primery;
 				font-size: 18px;
 				font-weight: 500;
 				line-height: 22px;
-				transition: 0.3s;
+				transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 				&:hover {
-					color: var(--color-primery-hover);
+					color: $color-primery-hover;
 				}
 			}
 		}
@@ -117,17 +118,17 @@
 	> div {
 		border: 1px solid #212121;
 		width: 100%;
-		transition: 0.4s;
+		transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 	&:hover {
 		> div {
-			border-color: var(--color-primery);
+			border-color: $color-primery;
 		}
 	}
 }
 .burger__off {
 	transform: translateX(100%);
-	transition: 0.4s;
+	transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media (max-width: 767px) {
 	.burger__open {

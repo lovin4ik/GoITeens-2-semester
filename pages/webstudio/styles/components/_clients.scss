@@ -1,3 +1,4 @@
+@import '../utils/variables';
 .clients {
 	margin-bottom: 95px;
 	> .wrapper {
@@ -28,16 +29,15 @@
 				align-items: center;
 				width: 170px;
 				height: 92px;
-				transition: 0.4s;
+				transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 				> .icon {
 					fill: #afb1b8;
-					transition: 0.3s;
+					transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 				}
 				&:hover {
-					border: 1px solid var(--color-primery);
+					border: 1px solid $color-primery;
 					> .icon {
 						fill: #2196f3;
-
 					}
 				}
 			}
@@ -46,7 +46,7 @@
 }
 @media (max-width: 1200px) {
 	.clients__menu {
-		> li > a{
+		> li > a {
 			width: 226px;
 		}
 	}

@@ -1,3 +1,4 @@
+@import '../utils/variables';
 .header {
 	width: 100%;
 	position: sticky;
@@ -7,7 +8,7 @@
 	z-index: 99;
 	> .wrapper {
 		padding: 25px 15px;
-  	display: flex;
+		display: flex;
 		align-items: center;
 	}
 	&__nav {
@@ -23,7 +24,7 @@
 		letter-spacing: 1px;
 		> span {
 			font-family: "Raleway", sans-serif;
-			color: var(--color-primery);
+			color: $color-primery;
 		}
 	}
 	&__menu {
@@ -36,22 +37,22 @@
 				color: #000000;
 				font-size: 14px;
 				font-weight: 500;
-				transition: 0.4s ease-in-out;
+				transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 				position: relative;
 				&:hover {
-					color: var(--color-primery-hover);
+					color: $color-primery-hover;
 				}
 			}
 			> a.active {
-				color: var(--color-primery);
+				color: $color-primery;
 				&::after {
 					content: "";
 					position: absolute;
 					bottom: -31px;
 					left: 0;
-					border: 1px solid var(--color-primery);
+					border: 1px solid $color-primery;
 					width: 100%;
-					background-color: var(--color-primery);
+					background-color: $color-primery;
 					border-radius: 2px;
 				}
 			}
@@ -65,7 +66,7 @@
 		margin-left: auto;
 		&__link {
 			color: #757575;
-			transition: ease-in-out 0.4s;
+			transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -75,12 +76,12 @@
 			line-height: 16.41px;
 			> .icon {
 				fill: #757575;
-				transition: ease-in-out 0.4s;
+				transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 			}
 			&:hover {
-				color: var(--color-primery-hover);
+				color: $color-primery-hover;
 				> .icon {
-					fill: var(--color-primery);
+					fill: $color-primery;
 				}
 			}
 		}

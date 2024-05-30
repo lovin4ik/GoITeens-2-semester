@@ -1,3 +1,4 @@
+@import '../utils/variables';
 .team {
 	background-color: #f5f4fa;
 	margin: 95px 0;
@@ -28,7 +29,10 @@
 			border-radius: 0 0 4px 4px;
 			background-color: #ffffff;
 			padding-bottom: 30px;
-			box-shadow: 0 2px 1px 0 #00000033, 0 1px 1px 0 #00000024, 0 1px 3px 0 #0000001F;
+			box-shadow:
+				0 2px 1px 0 #00000033,
+				0 1px 1px 0 #00000024,
+				0 1px 3px 0 #0000001f;
 			> img {
 				max-width: 270px;
 			}
@@ -55,12 +59,12 @@
 					border-radius: 50%;
 					background-color: transparent;
 					padding: 12px;
-					transition: 0.3s ease-in-out;
+					transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 					> i {
-						transition: 0.4s;
+						transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 					}
 					&:hover {
-						background-color: var(--color-primery);
+						background-color: $color-primery;
 						> i {
 							color: #ffffff;
 						}

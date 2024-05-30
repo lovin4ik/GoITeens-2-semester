@@ -11,6 +11,7 @@ const toggle = (e) => {
 	refs.modalWrapper.classList.toggle('modal__on');
 	refs.body.classList.toggle('no-scroll');
 };
+
 refs.modalWrapper.addEventListener('click', (e) => {
 	e.stopPropagation();
 });

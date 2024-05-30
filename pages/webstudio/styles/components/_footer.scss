@@ -1,3 +1,4 @@
+@import '../utils/variables';
 .footer {
 	background-color: #2f303a;
 	padding: 60px 0;
@@ -23,7 +24,7 @@
 			font-weight: 700;
 			line-height: 30.52px;
 			> span {
-				color: var(--color-primery);
+				color: $color-primery;
 				font-family: "Raleway", sans-serif;
 			}
 		}
@@ -58,9 +59,9 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				transition: 0.2s ease-in-out;
+				transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 				&:hover {
-					background-color: var(--color-primery);
+					background-color: $color-primery;
 				}
 			}
 			> li > a > i {
@@ -89,18 +90,18 @@
 				margin-right: 12px;
 				outline: none;
 				&:focus {
-					border: 1px solid var(--color-primery);
+					border: 1px solid $color-primery;
 				}
 			}
 			> button {
-				background-color: var(--color-primery);
+				background-color: $color-primery;
 				padding: 10px 28px;
 				color: #ffffff;
 				border-radius: 4px;
 				font-size: 16px;
 				font-weight: 700;
 				line-height: 30px;
-				transition: 0.4s;
+				transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -109,7 +110,7 @@
 					fill: #fff;
 				}
 				&:hover {
-					background-color: var(--color-primery-hover);
+					background-color: $color-primery-hover;
 				}
 			}
 		}

@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--color-brand);
+  background-color: #1a1b1f;
   border-bottom: 2px solid #262931;
   z-index: 1488;
 }
@@ -15,28 +15,28 @@
   padding: 20px 0;
 }
 .header__wrapper > .logo {
-  font-size: calc(var(--index) * 0.9);
+  font-size: calc((1vw + 1vh) * 0.9);
   font-weight: 300;
-  letter-spacing: calc(var(--index) * 0.3);
+  letter-spacing: calc((1vw + 1vh) * 0.3);
   transition: 0.4s ease-in-out;
 }
 .header__wrapper > .logo:hover {
   transform: scale(1.1);
-  color: var(--color-text-hover);
+  color: #8d7eb9;
 }
 .header__menu {
   display: flex;
-  gap: calc(var(--index) * 2);
+  gap: calc((1vw + 1vh) * 2);
   align-items: center;
 }
 .header__menu > li > a {
-  font-size: calc(var(--index) * 0.7);
+  font-size: calc((1vw + 1vh) * 0.7);
   font-weight: 400;
-  letter-spacing: calc(var(--index) * 0.2);
+  letter-spacing: calc((1vw + 1vh) * 0.2);
   transition: 0.4s ease-in-out;
 }
 .header__menu > li > a:hover {
-  color: var(--color-text-hover);
+  color: #8d7eb9;
 }
 
 .hero {
@@ -76,18 +76,18 @@
   padding: 50px 0 50px 50px;
   width: calc(50% + 32px);
   border-radius: 20px;
-  height: calc(var(--index) * 15);
+  height: calc((1vw + 1vh) * 15);
 }
 .hero__cart__title {
   color: #abc7ff;
-  font-size: calc(var(--index) * 2);
+  font-size: calc((1vw + 1vh) * 2);
   padding-bottom: 30px;
   font-weight: 600;
 }
 .hero__cart__text {
   max-width: 365px;
   color: #abc7ff;
-  font-size: calc(var(--index));
+  font-size: calc(1vw + 1vh);
   font-weight: 600;
   padding-bottom: 50px;
 }
@@ -96,7 +96,7 @@
   background-color: #abc7ff;
   padding: 15px;
   border-radius: 25px;
-  font-size: calc(var(--index) * 0.7);
+  font-size: calc((1vw + 1vh) * 0.7);
   font-weight: 500;
   transition: ease-in-out 0.4s;
 }
@@ -108,7 +108,7 @@
   width: calc(50% + 32px);
   transform: scale(1.1);
   border-radius: 20px;
-  height: calc(var(--index) * 15);
+  height: calc((1vw + 1vh) * 15);
 }
 .swiper-slide {
   border-radius: 20px;
@@ -162,7 +162,7 @@
   padding: 15px 20px;
   border: 1px solid #2c2c2c;
   border-radius: 10px;
-  width: 200px;
+  width: 250px;
   height: 100px;
 }
 .projects__menu__item__title {
@@ -185,4 +185,6 @@
   font-family: "Raleway", sans-serif;
   color: #2196f3;
   font-weight: 700;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

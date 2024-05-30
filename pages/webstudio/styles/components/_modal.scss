@@ -1,3 +1,4 @@
+@import '../utils/variables';
 .modal {
 	position: fixed;
 	opacity: 1;
@@ -18,7 +19,7 @@
 		background-color: #ffffff;
 		padding: 40px;
 		position: relative;
-		transition: 0.2s;
+		transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 		box-shadow:
 			0px 2px 1px 0px #00000033,
 			0px 1px 1px 0px #00000024,
@@ -46,10 +47,10 @@
 		border-radius: 50%;
 		border: 1px solid #0000001a;
 		background-color: transparent;
-		transition: 0.3s ease-in-out;
+		transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 		&:hover {
 			transform: rotate(360deg);
-			fill: var(--color-primery);
+			fill: $color-primery;
 		}
 	}
 	&__form {
@@ -74,22 +75,22 @@
 				border: 1px solid #21212133;
 				border-radius: 4px;
 				padding: 11px 11px 11px 30px;
-				transition: 0.4s;
+				transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 				outline: none;
 				background-color: transparent;
 				&:hover {
-					border: 1px solid var(--color-primery);
+					border: 1px solid $color-primery;
 				}
 				&:focus {
-					border: 1px solid var(--color-primery);
+					border: 1px solid $color-primery;
 				}
 				&:hover + * {
-					fill: var(--color-primery);
-					color: var(--color-primery);
+					fill: $color-primery;
+					color: $color-primery;
 				}
 				&:focus + * {
-					fill: var(--color-primery);
-					color: var(--color-primery);
+					fill: $color-primery;
+					color: $color-primery;
 				}
 			}
 			> i {
@@ -97,7 +98,7 @@
 				top: 33px;
 				left: 12px;
 				font-size: 12px;
-				transition: 0.4s;
+				transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 				fill: #212121;
 				color: #212121;
 			}
@@ -106,7 +107,7 @@
 				top: 33px;
 				left: 12px;
 				font-size: 12px;
-				transition: 0.4s;
+				transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 				fill: #212121;
 				color: #212121;
 			}
@@ -117,9 +118,9 @@
 				border: 1px solid #21212133;
 				border-radius: 4px;
 				outline: none;
-				transition: 0.3s;
+				transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 				&:hover {
-					border-color: var(--color-primery);
+					border-color: $color-primery;
 				}
 			}
 		}
@@ -133,13 +134,13 @@
 				display: inline;
 				padding-left: 8px;
 				> a {
-					color: var(--color-primery);
+					color: $color-primery;
 					text-decoration: underline;
 				}
 			}
 		}
 		&__btn {
-			background-color: var(--color-primery);
+			background-color: $color-primery;
 			color: #ffffff;
 			padding: 10px 52px;
 			font-size: 16px;
@@ -147,16 +148,16 @@
 			line-height: 30px;
 			border-radius: 4px;
 			margin-top: 30px;
-			transition: 0.3s;
+			transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 			&:hover {
-				background-color: var(--color-primery-hover);
+				background-color: $color-primery-hover;
 			}
 		}
 	}
 }
 .modal__on {
 	transform: scale(1);
-	transition: 0.2s;
+	transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media (max-width: 1200px) {
 	.modal__wrapper {

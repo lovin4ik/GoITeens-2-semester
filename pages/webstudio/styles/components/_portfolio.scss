@@ -33,18 +33,17 @@
 		> li {
 			padding-bottom: 20px;
 			position: relative;
-			transition: 0.4s ease-in-out;
+			transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 			width: 370px;
 			> img {
 				height: 294px;
 				width: 100%;
 			}
 			&::after {
-				content: "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.";
+				content: '';
 				position: absolute;
-				top: 0;
+				bottom: 114px;
 				left: 0;
-				height: 294px;
 				display: flex;
 				visibility: hidden;
 				opacity: 0;
@@ -54,13 +53,20 @@
 				width: 100%;
 				background-color: #2196f3e5;
 				padding: 0 24px;
-				transition: 0.4s ease-in-out;
+				height: 0;
+				transition: all 0.250s cubic-bezier(0.4, 0, 0.2, 1);
 			}
 			&:hover {
-				box-shadow: 1px 4px 6px 0 #00000029, 0 4px 4px 0 #0000000F, 0 1px 1px 0 #0000001F;
+				box-shadow:
+					1px 4px 6px 0 #00000029,
+					0 4px 4px 0 #0000000f,
+					0 1px 1px 0 #0000001f;
 				&::after {
+					content: "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.";
 					visibility: visible;
 					opacity: 1;
+					height: 294px;
+					transition: 0.250s cubic-bezier(0.4, 0, 0.2, 1);
 				}
 			}
 			> h3 {
@@ -88,7 +94,7 @@
 	}
 }
 @media (max-width: 767px) {
-	.projects__list	 {
+	.projects__list {
 		align-items: center;
 		> li {
 			width: 450px;
