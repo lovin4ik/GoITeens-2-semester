@@ -97,3 +97,11 @@
 		}
 	}
 }
+@media (max-width: 450px) {
+	.team__list__item {
+		max-width: calc(100vw - 30px);
+		> img {
+			max-width: calc(100vw - 30px);
+		}
+	}
+}

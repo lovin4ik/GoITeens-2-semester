@@ -429,6 +429,14 @@ address {
     max-width: 450px;
   }
 }
+@media (max-width: 450px) {
+  .team__list__item {
+    max-width: calc(100vw - 30px);
+  }
+  .team__list__item > img {
+    max-width: calc(100vw - 30px);
+  }
+}
 .modal__form, .modal__close, .modal, .footer__form__link > button, .footer > .wrapper, .clients > .wrapper, .header__address__link {
   display: flex;
   align-items: center;
@@ -636,6 +644,11 @@ address {
   .footer__form__link > input {
     margin: 0;
     width: 450px;
+  }
+}
+@media (max-width: 460px) {
+  .footer__form__link > input {
+    width: calc(100vw - 30px);
   }
 }
 .projects {
@@ -929,6 +942,7 @@ address {
   background-color: #fff;
   z-index: 101;
   padding: 48px 40px;
+  visibility: hidden;
   transform: translateX(100%);
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
@@ -1038,6 +1052,7 @@ address {
 .burger__on {
   transform: translateX(0);
   opacity: 1;
+  visibility: visible;
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 

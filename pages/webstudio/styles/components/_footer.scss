@@ -140,3 +140,10 @@
 		}
 	}
 }
+@media (max-width: 460px) {
+	.footer__form__link {
+		> input {
+			width: calc(100vw - 30px);
+		}
+	}
+}
