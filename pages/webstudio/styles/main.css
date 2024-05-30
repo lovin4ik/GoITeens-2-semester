@@ -631,6 +631,7 @@ address {
   .footer__form__link {
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
   }
   .footer__form__link > input {
     margin: 0;
@@ -928,8 +929,9 @@ address {
   background-color: #fff;
   z-index: 101;
   padding: 48px 40px;
-  transform: translateX(0);
+  transform: translateX(100%);
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
 }
 .burger__menu > .burger__close {
   position: absolute;
@@ -1033,8 +1035,9 @@ address {
   border-color: #2196f3;
 }
 
-.burger__off {
-  transform: translateX(100%);
+.burger__on {
+  transform: translateX(0);
+  opacity: 1;
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 

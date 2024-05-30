@@ -132,6 +132,7 @@
 		&__link {
 			justify-content: center;
 			gap: 20px;
+			flex-wrap: wrap;
 			> input {
 				margin: 0;
 				width: 450px;

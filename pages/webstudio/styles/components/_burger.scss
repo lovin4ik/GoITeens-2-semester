@@ -9,9 +9,9 @@
 		background-color: #fff;
 		z-index: 101;
 		padding: 48px 40px;
-		transform: translateX(0);
+		transform: translateX(100%);
 		transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-
+		opacity: 0;
 		> .burger__close {
 			position: absolute;
 			top: 10px;
@@ -126,8 +126,9 @@
 		}
 	}
 }
-.burger__off {
-	transform: translateX(100%);
+.burger__on {
+	transform: translateX(0);
+	opacity: 1;
 	transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media (max-width: 767px) {
