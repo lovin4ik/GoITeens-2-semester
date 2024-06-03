@@ -1,0 +1,50 @@
+@import "../utils/variables";
+.app {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	> .main__wrapper {
+		overflow-x: hidden;
+		overflow-y: auto;
+		position: relative;
+		width: 90vw;
+		height: 90vh;
+		background-color: rgba(17, 25, 40, 0.75);
+		backdrop-filter: blur(19px);
+		padding: 15px;
+		border-radius: 10px;
+		border: 1px solid rgba(255, 255, 255, 0.125);
+		color: $color-text;
+		&::-webkit-scrollbar {
+			width: 12px;
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: #212121;
+			width: 50px;
+			height: 50px;
+			border-radius: 12px;
+		}
+		&::-webkit-scrollbar-thumb:hover {
+			background-color: #212121;
+		}
+		&::-webkit-scrollbar-track {
+			border-radius: 12px;
+		}
+	}
+}
+.app.light {
+	background-image: url(../images/Cloudy.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.app.night {
+	background-image: url(../images/cloudy_night.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}

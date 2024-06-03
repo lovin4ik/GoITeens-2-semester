@@ -1,40 +1,102 @@
-@import '../utils/variables';
+@import "../utils/variables";
 .header {
 	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-color: $color-brand;
-	border-bottom: 2px solid #262931;
-	z-index: 1488;
-	&__wrapper {
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		border-radius: 1px;
+	}
+	> .wrapper {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
-		padding: 20px 0;
-		> .logo {
-			font-size: calc($index * 0.9);
-			font-weight: 300;
-			letter-spacing: calc($index * 0.3);
-			transition: 0.4s ease-in-out;
-			&:hover {
-				transform: scale(1.1);
-				color: $color-text-hover;
+		padding: 10px;
+	}
+	&__logo {
+		font-size: 24px;
+		text-transform: uppercase;
+		letter-spacing: 0.2rem;
+		transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+		color: $color-text;
+		font-weight: 500;
+		&:hover {
+			color: #8d7eb9;
+			transform: scale(1.1);
+		}
+	}
+	&__navbar {
+		&__nav {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 70px;
+			font-size: 18px;
+			font-weight: 500;
+			letter-spacing: 0.1rem;
+			&__link {
+				color: $color-text;
+				transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+				&:hover {
+					color: #8d7eb9;
+				}
+			}
+			&__theme {
+				> button {
+					display: flex;
+					border-radius: 15px;
+					background-color: #212121;
+					color: #fbfbfb;
+					gap: 10px;
+					position: relative;
+					> .activeLinkTheme {
+						position: absolute;
+						top: 0;
+						left: 0;
+						border-radius: 50%;
+						width: 25px;
+						height: 100%;
+						background-color: #5c61e7;
+						transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+					}
+					> .activeLinkTheme.light {
+						left: 0;
+						transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+					}
+					> .activeLinkTheme.night {
+						left: 58%;
+						transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+					}
+					> p {
+						width: 25px;
+						height: 25px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						border-radius: 15px;
+						z-index: 1;
+					}
+				}
 			}
 		}
 	}
-	&__menu {
-		display: flex;
-		gap: calc($index * 2);
-		align-items: center;
-		> li > a {
-			font-size: calc($index * 0.7);
-			font-weight: 400;
-			letter-spacing: calc($index * 0.2);
-			transition: 0.4s ease-in-out;
-			&:hover {
-				color: $color-text-hover;
+	&__modalOpen {
+		width: 32px;
+		display: none;
+		flex-direction: column;
+		gap: 5px;
+		cursor: pointer;
+		&:hover {
+			> div {
+				border-color: #8d7eb9;
 			}
+		}
+		> div {
+			border: 1px solid #fbfbfb;
+			transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 		}
 	}
 }

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 :root {
 	--index: calc(1vw + 1vh);
 	--color-text: #e3e2e6;
@@ -11,7 +11,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: "Poppins", sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 *::after,
 *::before {
@@ -21,9 +21,10 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	background-color: var(--color-brand);
-	color: var(--color-text);
 	overflow-x: hidden;
+	min-height: 100vh;
+	min-width: 100vw;
+	color: var(--color-text);
 }
 a {
 	text-decoration: none;
@@ -32,11 +33,6 @@ a {
 button {
 	border: none;
 	cursor: pointer;
-}
-
-.wrapper {
-	max-width: 1220px;
-	margin: 0 auto;
 }
 li {
 	list-style: none;
