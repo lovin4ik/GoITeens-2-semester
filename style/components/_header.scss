@@ -78,25 +78,11 @@
 						justify-content: center;
 						border-radius: 15px;
 						z-index: 1;
+						color: #fbfbfb;
+						font-size: 18px;
 					}
 				}
 			}
-		}
-	}
-	&__modalOpen {
-		width: 32px;
-		display: none;
-		flex-direction: column;
-		gap: 5px;
-		cursor: pointer;
-		&:hover {
-			> div {
-				border-color: #8d7eb9;
-			}
-		}
-		> div {
-			border: 1px solid #fbfbfb;
-			transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 		}
 	}
 }
