@@ -5,6 +5,12 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		flex-direction: column;
+	}
+	&__title {
+		font-size: 42px;
+		font-weight: 700;
+		margin-bottom: 90px;
 	}
 	&__menu {
 		display: flex;

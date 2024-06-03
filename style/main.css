@@ -10,7 +10,7 @@
   width: 90vw;
   height: 90vh;
   background-color: rgba(17, 25, 40, 0.75);
-  backdrop-filter: blur(19px);
+  backdrop-filter: blur(19px) saturate(180%);
   padding: 15px;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.125);
@@ -136,7 +136,7 @@
 
 .hero {
   width: 100%;
-  padding: 300px 0;
+  padding: 350px 0;
   background-image: url(../images/abstract-bg.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -167,6 +167,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+.projects__title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 90px;
 }
 .projects__menu {
   display: flex;
@@ -250,6 +256,15 @@
   color: #8d7eb9;
 }
 
+.best {
+  margin-top: 100px;
+}
+.best__title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 90px;
+}
 .best__swiper__slide {
   display: flex;
   gap: 70px;
