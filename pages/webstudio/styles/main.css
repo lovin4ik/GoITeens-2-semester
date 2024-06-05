@@ -72,6 +72,7 @@ address {
   left: 0;
   background-color: #ffffff;
   z-index: 99;
+  border-bottom: 1px solid #ececec;
 }
 .header > .wrapper {
   padding: 25px 15px;
