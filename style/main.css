@@ -9,12 +9,14 @@
   position: relative;
   width: 90vw;
   height: 90vh;
-  background-color: rgba(17, 25, 40, 0.6);
-  backdrop-filter: blur(19px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.55);
+  -webkit-backdrop-filter: blur(19px) saturate(180%);
+          backdrop-filter: blur(19px) saturate(180%);
   padding: 15px;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #f4f6f7;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .app > .main__wrapper::-webkit-scrollbar {
   width: 12px;
@@ -292,6 +294,4 @@
   .best__swiper__slide > img {
     max-width: calc(100% - 100px);
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

@@ -127,14 +127,16 @@ address {
 .header__address {
   display: flex;
   row-gap: 10px;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   flex-wrap: wrap;
   margin-left: auto;
 }
 .header__address__link {
   color: #757575;
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  column-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   font-size: 14px;
   font-weight: 500;
   line-height: 16.41px;
@@ -626,7 +628,8 @@ address {
     align-items: center;
   }
   .footer > .wrapper {
-    column-gap: 165px;
+    -moz-column-gap: 165px;
+         column-gap: 165px;
   }
   .footer__menu {
     align-items: center;
@@ -1094,6 +1097,4 @@ address {
   .burger__open {
     display: flex;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
