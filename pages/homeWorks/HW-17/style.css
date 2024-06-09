@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+	font-family: "Montserrat", sans-serif;
+	box-sizing: border-box;
+}
+.hero {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1440px;
+	background-image: url("./img/bg.png");
+}
+.login__title,
+.hero__title {
+	font-family: "Poppins", sans-serif;
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+.order {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1440px;
+	background-image: url("./img/bg2.png");
+}
