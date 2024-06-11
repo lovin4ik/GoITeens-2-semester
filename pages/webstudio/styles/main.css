@@ -912,6 +912,39 @@ address {
 .modal__form__wrapper > textarea:hover {
   border-color: #2196f3;
 }
+.modal__form__check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal__form__check > input {
+  display: none;
+}
+.modal__form__check > input:checked + label {
+  background-color: #2196f3;
+  border-color: #2196f3;
+}
+.modal__form__check > input:checked + label > img {
+  display: inline;
+}
+.modal__form__check > label {
+  display: inline-block;
+  position: relative;
+  border: 1px solid #212121;
+  border-radius: 4px;
+  width: 15px;
+  height: 15px;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__form__check > label > img {
+  position: absolute;
+  display: none;
+  top: 3px;
+  left: 2px;
+  width: 11px;
+  height: 8px;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal__form__check > p {
   font-size: 14px;
   font-weight: 400;

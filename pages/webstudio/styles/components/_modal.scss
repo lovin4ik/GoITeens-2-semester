@@ -121,6 +121,37 @@
 			}
 		}
 		&__check {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			> input {
+				display: none;
+				&:checked + label{
+					background-color: #2196f3;
+					border-color: #2196f3;
+					> img {
+						display: inline;
+					}
+				}
+			}
+			> label {
+				display: inline-block;
+				position: relative;
+				border: 1px solid #212121;
+				border-radius: 4px;
+				width: 15px;
+				height: 15px;
+				transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+				> img {
+					position: absolute;
+					display: none;
+					top: 3px;
+					left: 2px;
+					width: 11px;
+					height: 8px;
+					transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+				}
+			}
 			> p {
 				font-size: 14px;
 				font-weight: 400;
