@@ -45,41 +45,70 @@
 				}
 			}
 			&__theme {
-				> button {
-					display: flex;
-					border-radius: 15px;
-					background-color: #212121;
-					color: #fbfbfb;
-					gap: 10px;
+				> label {
+					width: 60px;
+					height: 30px;
+					background-color: #728cda;
 					position: relative;
-					> .activeLinkTheme {
+					display: block;
+					border-radius: 200px;
+					cursor: pointer;
+					transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+					box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+					> .bx-sun {
 						position: absolute;
-						top: 0;
-						left: 0;
-						border-radius: 50%;
-						width: 25px;
-						height: 100%;
-						background-color: #5c61e7;
+						top: 6px;
+						left: 6px;
+						z-index: 2;
 						transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-					}
-					> .activeLinkTheme.light {
-						left: 0;
-						transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-					}
-					> .activeLinkTheme.night {
-						left: 58%;
-						transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-					}
-					> p {
-						width: 25px;
-						height: 25px;
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						border-radius: 15px;
-						z-index: 1;
 						color: #fbfbfb;
-						font-size: 18px;
+					}
+					> .bx-moon {
+						position: absolute;
+						left: 6px;
+						top: 6px;
+						z-index: 2;
+						transform: translateX(153%);
+						color: #ffffffb5;
+						transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+					}
+					&::after {
+						content: '';
+						position: absolute;
+						display: block;
+						top: 5px;
+						left: 5px;
+						width: 20px;
+						height: 20px;
+						border-radius: 50%;
+						background-color: #e3c1e6;
+						box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+						transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+					}
+					&:active {
+						&::after {
+							width: 25px;
+						}
+					}
+				}
+				> input {
+					// width: 0;
+					// height: 0;
+					// visibility: hidden;
+					display: none;
+				}
+				> input:checked + label {
+					background-color: #392656;
+					> .bx-sun {
+						color: #ffffffb5;
+					}
+					> .bx-moon {
+						color: #fbfbfb;
+					}
+					&::after {
+						left: 55px;
+						transform: translateX(-100%);
+						background-color: #d69e7e;
 					}
 				}
 			}
