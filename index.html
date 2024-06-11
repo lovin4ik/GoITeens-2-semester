@@ -1,146 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>GoIteens | 2 semester</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>GoIteens | 2 semester</title>
 
-	<link
-		href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-		rel="stylesheet"
-	/> <!-- box-icons -->
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<!-- box-icons -->
 
-	<link
-		rel="stylesheet"
-		href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-	/> <!-- swiper -->
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script> <!-- swiper -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<!-- swiper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+			defer
+		></script>
+		<!-- swiper -->
 
-	<script src="./js/changeTheme.js" defer></script>
-	<script src="./js/main-swiper.js" defer></script> <!-- swiper -->
+		<script src="./js/changeTheme.js" defer></script>
+		<script src="./js/main-swiper.js" defer></script>
+		<!-- swiper -->
 
-	<link rel="stylesheet" href="./style/reset.css"/>
-	<link rel="stylesheet" href="./style/main.css"/>
-</head>
-<body class="app light">
-<div class="main__wrapper">
-
-	<header class="header">
-		<div class="wrapper">
-			<a href="./index.html" class="header__logo">Portfolio</a>
-			<nav class="header__navbar">
-				<ul class="header__navbar__nav">
-					<li>
-						<a class="header__navbar__nav__link" href="#projects">Projects</a>
-					</li>
-					<li>
-						<a class="header__navbar__nav__link" href="#contacts">Contacts</a>
-					</li>
-					<li class="header__navbar__nav__theme">
-						<input type="checkbox" id="activeLinkTheme">
-						<label for="activeLinkTheme" id='activeLinkThemeLabel'>
-							<i class='bx bx-sun'></i>
-							<i class='bx bx-moon'></i>
-						</label>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-
-	<main>
-
-		<section class="hero">
-			<div class="wrapper">
-				<h2 class="hero__title">Hi, my name is
-					<span class="purple">Valera</span>
-					<span class="small">a frontend developer</span>
-				</h2>
-			</div>
-		</section>
-
-		<section class="best">
-			<h2 class="best__title">My Best Projects</h2>
-			<div class="best__swiper swiper">
-				<div class="swiper-wrapper best__swiper__wrapper">
-					<div class="best__swiper__slide swiper-slide">
-						<img src="./images/webstudio/hero.png" alt="Foto">
-						<div class="best__swiper__slide__wrapper">
-							<h2 class="best__swiper__slide__title">WebStudio</h2>
-							<a class="best__swiper__slide__link" href="./pages/webstudio/webstudio.html">Link ></a>
-						</div>
-					</div>
-					<div class="best__swiper__slide swiper-slide">
-						<img src="./images/bakery.jpg" alt="Foto">
-						<div class="best__swiper__slide__wrapper">
-							<h2 class="best__swiper__slide__title">Bakery</h2>
-							<a class="best__swiper__slide__link" href="https://github.com/lovin4ik/bakery">Link ></a>
-						</div>
-					</div>
-					<div class="best__swiper__slide swiper-slide">
-						<img src="./images/calculator.png" alt="Foto">
-						<div class="best__swiper__slide__wrapper">
-							<h2 class="best__swiper__slide__title">Calculator made on React</h2>
-							<a class="best__swiper__slide__link" href="https://github.com/lovin4ik/calculator-react-app">Link ></a>
-						</div>
-					</div>
+		<link rel="stylesheet" href="./style/reset.css" />
+		<link rel="stylesheet" href="./style/main.css" />
+	</head>
+	<body class="app light">
+		<div class="main__wrapper">
+			<header class="header">
+				<div class="wrapper">
+					<a href="./index.html" class="header__logo">Portfolio</a>
+					<nav class="header__navbar">
+						<ul class="header__navbar__nav">
+							<li>
+								<a class="header__navbar__nav__link" href="#projects"
+									>Projects</a
+								>
+							</li>
+							<li>
+								<a class="header__navbar__nav__link" href="#contacts"
+									>Contacts</a
+								>
+							</li>
+							<li class="header__navbar__nav__theme">
+								<input type="checkbox" id="activeLinkTheme" />
+								<label for="activeLinkTheme" id="activeLinkThemeLabel">
+									<i class="bx bx-sun"></i>
+									<i class="bx bx-moon"></i>
+								</label>
+							</li>
+						</ul>
+					</nav>
 				</div>
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
-			</div>
-		</section>
+			</header>
 
-		<section class="projects" id="projects">
-			<div class="wrapper">
-				<h2 class="projects__title">Projects</h2>
-				<ul class="projects__menu">
-					<li class="projects__menu__project">
-						<a href="./pages/webstudio/webstudio.html">WebStudio</a>
-					</li>
-					<li class="projects__menu__project">
-						<a href="./pages/homeWorks/HW-3/index.html">Home Work - 3</a>
-					</li>
-					<li class="projects__menu__project">
-						<a href="./pages/homeWorks/HW-5/index.html">Home Work - 5</a>
-					</li>
-					<li class="projects__menu__project">
-						<a href="./pages/homeWorks/HW-8/index.html">Home Work - 8</a>
-					</li>
-					<li class="projects__menu__project">
-						<a href="./pages/homeWorks/HW-17/index.html">Home Work - 17</a>
-					</li>
-				</ul>
-			</div>
-		</section>
+			<main>
+				<section class="hero">
+					<div class="wrapper">
+						<h2 class="hero__title">
+							Hi, my name is
+							<span class="purple">Valera</span>
+							<span class="small">a frontend developer</span>
+						</h2>
+					</div>
+				</section>
 
-	</main>
+				<section class="best">
+					<h2 class="best__title">My Best Projects</h2>
+					<div class="best__swiper swiper">
+						<div class="swiper-wrapper best__swiper__wrapper">
+							<div class="best__swiper__slide swiper-slide">
+								<img src="./images/webstudio/hero.png" alt="Foto" />
+								<div class="best__swiper__slide__wrapper">
+									<h2 class="best__swiper__slide__title">WebStudio</h2>
+									<a
+										class="best__swiper__slide__link"
+										href="./pages/webstudio/webstudio.html"
+										>Link ></a
+									>
+								</div>
+							</div>
+							<div class="best__swiper__slide swiper-slide">
+								<img src="./images/bakery.jpg" alt="Foto" />
+								<div class="best__swiper__slide__wrapper">
+									<h2 class="best__swiper__slide__title">Bakery</h2>
+									<a
+										class="best__swiper__slide__link"
+										href="https://github.com/lovin4ik/bakery"
+										>Link ></a
+									>
+								</div>
+							</div>
+							<div class="best__swiper__slide swiper-slide">
+								<img src="./images/calculator.png" alt="Foto" />
+								<div class="best__swiper__slide__wrapper">
+									<h2 class="best__swiper__slide__title">
+										Calculator made on React
+									</h2>
+									<a
+										class="best__swiper__slide__link"
+										href="https://github.com/lovin4ik/calculator-react-app"
+										>Link ></a
+									>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</section>
 
-	<footer id="contacts" class="footer">
-		<div class="wrapper">
-			<a href="./index.html" class="footer__logo">PortFolio</a>
-			<ul class="footer__contacts">
-				<li>
-					<a href="https://www.instagram.com/borovisko/" target="_blank" rel="noopener noreferrer">
-						<i class='bx bxl-instagram'></i>
-						Instagram
-					</a>
-				</li>
-				<li>
-					<a href="mailto:dianasmidt721@gmail.com"><i class='bx bx-envelope'></i>dianasmidt721@gmail.com</a>
-				</li>
-				<li>
-					<a href="https://github.com/lovin4ik"><i class='bx bxl-github'></i>GitHub</a></li>
-				<li>
-					<i class='bx bxl-discord-alt'></i>borovisko
-				</li>
-			</ul>
+				<section class="projects" id="projects">
+					<div class="wrapper">
+						<h2 class="projects__title">Projects</h2>
+						<ul class="projects__menu">
+							<li class="projects__menu__project">
+								<a href="./pages/webstudio/webstudio.html">WebStudio</a>
+							</li>
+							<li class="projects__menu__project">
+								<a href="./pages/homeWorks/HW-3/index.html">Home Work - 3</a>
+							</li>
+							<li class="projects__menu__project">
+								<a href="./pages/homeWorks/HW-5/index.html">Home Work - 5</a>
+							</li>
+							<li class="projects__menu__project">
+								<a href="./pages/homeWorks/HW-8/index.html">Home Work - 8</a>
+							</li>
+							<li class="projects__menu__project">
+								<a href="./pages/homeWorks/HW-17/index.html">Home Work - 17</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</main>
+
+			<footer id="contacts" class="footer">
+				<div class="wrapper">
+					<a href="./index.html" class="footer__logo">PortFolio</a>
+					<ul class="footer__contacts">
+						<li>
+							<a
+								href="https://www.instagram.com/borovisko/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<i class="bx bxl-instagram"></i>
+								Instagram
+							</a>
+						</li>
+						<li>
+							<a href="mailto:dianasmidt721@gmail.com"
+								><i class="bx bx-envelope"></i>dianasmidt721@gmail.com</a
+							>
+						</li>
+						<li>
+							<a href="https://github.com/lovin4ik"
+								><i class="bx bxl-github"></i>GitHub</a
+							>
+						</li>
+						<li><i class="bx bxl-discord-alt"></i>borovisko</li>
+					</ul>
+				</div>
+			</footer>
 		</div>
-	</footer>
-
-</div>
-<noscript>
-	Your browser does not support JavaScript or you have disabled it. Please enable JavaScript for this website to work
-	properly.
-</noscript>
-</body>
+		<noscript>
+			Your browser does not support JavaScript or you have disabled it. Please
+			enable JavaScript for this website to work properly.
+		</noscript>
+	</body>
 </html>

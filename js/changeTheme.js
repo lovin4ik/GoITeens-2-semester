@@ -1,17 +1,32 @@
 const activeLink = document.getElementById('activeLinkTheme');
 const app = document.querySelector('.app');
-const label = document.getElementById('activeLinkThemeLabel')
+const label = document.getElementById('activeLinkThemeLabel');
+let Theme;
 
-const toggle = () => {
+function toggle() {
 	setTimeout(() => {
-		if (activeLink.checked == true) {
-			app.classList.remove('light')
-			app.classList.add('night')
+		if (activeLink.checked === true) {
+			Theme = 'night';
+			app.classList.remove('light');
+			app.classList.add('night');
 		} else {
-			app.classList.add('light')
-			app.classList.remove('night')
-		}
-	}, 100)
+			Theme = 'light';
+			app.classList.add('light');
+			app.classList.remove('night');
+			}
+		localStorage.setItem('StyleTheme', Theme)
+	}, 100);
 }
 
-label.addEventListener('click', toggle)
+if (localStorage.getItem('StyleTheme')) {
+	Theme = localStorage.getItem('StyleTheme')
+	if (Theme === 'night') {
+		toggle()
+		activeLink.checked = true
+		console.log(Theme);
+	} else {
+		activeLink.checked = false
+	}
+}
+
+label.addEventListener('click', toggle);
