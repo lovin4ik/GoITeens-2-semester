@@ -1,6 +1,8 @@
 const activeLink = document.getElementById('activeLinkTheme');
 const app = document.querySelector('.app');
 const label = document.getElementById('activeLinkThemeLabel');
+app.classList.remove('night');
+
 let Theme;
 
 function toggle() {
