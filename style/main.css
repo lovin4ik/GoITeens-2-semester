@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(0, #ffd3aa, #d57aa2, #5851a1);
 }
 .app > .main__wrapper {
   overflow-x: hidden;
@@ -19,7 +20,7 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .app > .main__wrapper::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
 }
@@ -179,7 +180,12 @@
   max-width: 450px;
 }
 .hero__title > .purple {
+  background-image: linear-gradient(30deg, #ffd3aa, #d57aa2, #5851a1);
+  -webkit-text-fill-color: transparent;
   color: #5c62ec;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 .hero__title > .small {
   font-size: 34px;

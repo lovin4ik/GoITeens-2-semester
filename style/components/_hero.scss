@@ -15,7 +15,11 @@
 		text-align: center;
 		max-width: 450px;
 		> .purple {
+			background-image: linear-gradient(30deg, #ffd3aa, #d57aa2, #5851a1);
+			-webkit-text-fill-color: transparent;
 			color: #5c62ec;
+			background-repeat: no-repeat;
+			background-clip: text;
 		}
 		> .small {
 			font-size: 34px;
